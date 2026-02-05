@@ -72,7 +72,7 @@ const Footer = () => {
           >
             <Link to="/">
               <img
-                src="/image.png"
+                src="/companyLogo.png"
                 alt="Webvision Infotech logo"
                 loading="lazy"
                 className="
