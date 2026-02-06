@@ -44,7 +44,7 @@ const Navbar = () => {
           // h-24 (6rem or 96px) is taller than the nav's h-16.
           // You can adjust this value freely.
           className="h-18 w-auto"
-          src="/companyLogo.png"
+          src="/logo_v2.png"
           alt="Company Logo"
           loading="lazy"
         />
