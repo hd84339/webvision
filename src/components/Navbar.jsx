@@ -38,16 +38,16 @@ const Navbar = () => {
     >
       {/* Logo */}
       {/* --- CHANGE 2: The logo wrapper is back to being a simple flex item --- */}
-      <div className="cursor-pointer" onClick={() => handleNavigation('/')}>
+      <div className="cursor-pointer flex items-center gap-2" onClick={() => handleNavigation('/')}>
         <img
-          // --- CHANGE 3: Make the logo TALLER than the navbar's height ---
-          // h-24 (6rem or 96px) is taller than the nav's h-16.
-          // You can adjust this value freely.
-          className="h-18 w-auto"
+          className="h-10 w-auto"
           src="/logo_v2.png"
-          alt="Company Logo"
+          alt="Web Vision Logo"
           loading="lazy"
         />
+        <span className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent drop-shadow-sm font-['Poppins']">
+          Web Vision
+        </span>
       </div>
 
       {/* Desktop Menu (No changes needed) */}
