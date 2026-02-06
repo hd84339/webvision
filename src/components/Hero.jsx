@@ -20,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative bg-gray-100 py-12 px-4 md:px-16 overflow-hidden min-h-[500px] flex items-center">
+    <section className="relative bg-gray-100 py-20 px-4 md:px-16 overflow-hidden min-h-[85vh] flex items-center">
 
       {/* 🌌 Background Decorative Element */}
       <motion.div
@@ -33,14 +33,14 @@ const Hero = () => {
         className="absolute -top-24 -left-24 w-96 h-96 bg-purple-300 rounded-full blur-3xl pointer-events-none"
       />
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 relative z-10">
+      <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24 relative z-10">
 
         {/* 🚀 Left: Interactive Image with Floating Animation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: "backOut" }}
-          className="flex-1 w-full flex items-center justify-center group"
+          className="flex-1 w-full flex items-center justify-center group order-2 md:order-1"
         >
           <motion.div
             animate={{ y: [0, -20, 0] }} // Floating effect
@@ -48,13 +48,13 @@ const Hero = () => {
             className="relative"
           >
             {/* Glow effect behind image */}
-            <div className="absolute inset-0 bg-blue-400/20 blur-2xl rounded-full scale-110 group-hover:bg-purple-400/30 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-blue-400/20 blur-3xl rounded-full scale-110 group-hover:bg-purple-400/30 transition-colors duration-500" />
 
             <img
               src="/program.png"
               alt="WebVision Illustration"
               loading="lazy"
-              className="w-full max-w-[500px] h-auto object-contain relative z-10 drop-shadow-2xl"
+              className="w-full max-w-[650px] lg:max-w-[750px] h-auto object-contain relative z-10 drop-shadow-2xl"
             />
           </motion.div>
         </motion.div>
