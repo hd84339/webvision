@@ -5,11 +5,11 @@ import SEO from '../components/SEO';
 
 const products = [
     {
-        title: "POS Software Development",
-        tagline: "Retail & Sales Management",
-        description: "Scale your retail operations with a smart POS that automates inventory, maximizes margins, and integrates loyalty programs effortlessly.",
-        features: ["Inventory Tracking", "Cloud Reporting", "Loyalty Management"],
-        image: "/images/app_analytics_dashboard.jpg",
+        title: "Fast Quotation & Invoice App",
+        tagline: "Quick Business Solutions",
+        description: "Create and send professional quotes and invoices on the go. Specifically designed for speed and ease of use to keep your cash flow moving.",
+        features: ["Instant Quotes", "PDF Generation", "Share via WhatsApp"],
+        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop",
         color: "blue"
     },
     {
@@ -21,28 +21,28 @@ const products = [
         color: "indigo"
     },
     {
-        title: "Invoice & Billing Pro",
-        tagline: "Multi-Entity Financials",
-        description: "Manage multiple companies under a single license. Seamlessly import financial lists and export tax-ready reports in one click.",
-        features: ["Multi-Currency", "Tax Automation", "Excel Integration"],
+        title: "Loyalty Management Software",
+        tagline: "Customer Retention Suite",
+        description: "A complete ecosystem to retain customers. Includes a mobile app for customers to track points, redeem rewards, and stay engaged with your brand.",
+        features: ["Mobile App Integration", "Points Logic", "Campaign Tools"],
+        image: "/images/app_analytics_dashboard.jpg",
+        color: "purple"
+    },
+    {
+        title: "Billing Software",
+        tagline: "Comprehensive Finance",
+        description: "Full-fledged billing solution for businesses. Manage inventory, GST/Tax calculations, multi-store data, and generate detailed financial reports.",
+        features: ["GST Ready", "Inventory Sync", "Multi-Store"],
         image: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=2070&auto=format&fit=crop",
         color: "cyan"
     },
     {
-        title: "Jewelry Management",
-        tagline: "Inventory Security",
-        description: "Protect your high-value assets with barcode article tracking. Specialized ARTICLE-WISE tracking prevents theft and simplifies stock audits.",
-        features: ["Barcode Scanning", "Article Tracking", "Theft Protection"],
-        image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop",
-        color: "orange"
-    },
-    {
-        title: "Institute Management",
-        tagline: "Education Administration",
-        description: "A centralized hub for schools to handle student records, fee collections, library operations, and transport routes in real-time.",
-        features: ["Student CRM", "Library Mgmt", "Fee Automation"],
-        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop",
-        color: "purple"
+        title: "AMC & Service CRM",
+        tagline: "Service Excellence",
+        description: "Streamline your Annual Maintenance Contracts. Track service schedules, manage technician visits, and automate renewal reminders for superior customer service.",
+        features: ["Automated Reminders", "Field Service", "Complaint Tracking"],
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop",
+        color: "rose"
     }
 ];
 
@@ -58,7 +58,7 @@ const ProductSection = ({ product, index }) => {
             className="group relative"
         >
             <div className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
-                <motion.div 
+                <motion.div
                     className="w-full lg:w-1/2 relative"
                     whileHover={{ scale: 1.02, rotateY: isReversed ? -5 : 5 }}
                     transition={{ type: "spring", stiffness: 200, damping: 20 }}
@@ -73,7 +73,7 @@ const ProductSection = ({ product, index }) => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
                     </div>
-                    <motion.div 
+                    <motion.div
                         animate={{ y: [0, -10, 0] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                         className="absolute -bottom-6 -right-6 hidden md:flex bg-white p-4 rounded-xl shadow-xl items-center gap-3 border border-slate-100"
@@ -138,8 +138,8 @@ const OurProducts = () => {
                     >
                         <Zap size={14} /> Global Enterprise Solutions
                     </motion.div>
-                    
-                    <motion.h1 
+
+                    <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight"
@@ -149,8 +149,8 @@ const OurProducts = () => {
                             Software Products
                         </span>
                     </motion.h1>
-                    
-                    <motion.p 
+
+                    <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
