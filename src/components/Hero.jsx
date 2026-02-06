@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
-import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
   // Animation Variants

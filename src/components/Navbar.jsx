@@ -40,14 +40,17 @@ const Navbar = () => {
       {/* --- CHANGE 2: The logo wrapper is back to being a simple flex item --- */}
       <div className="cursor-pointer flex items-center gap-2" onClick={() => handleNavigation('/')}>
         <img
-          className="h-10 w-auto"
+          className="h-14 w-auto object-contain"
           src="/logo_v2.png"
           alt="Web Vision Logo"
           loading="lazy"
         />
-        <span className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent drop-shadow-sm font-['Poppins']">
-          Web Vision
-        </span>
+        <div className="flex flex-col leading-none">
+          <span className="text-2xl font-bold italic tracking-tight text-slate-800 font-['Poppins']">
+            Web
+            <span className="text-pink-600 ml-1">Vision</span>
+          </span>
+        </div>
       </div>
 
       {/* Desktop Menu (No changes needed) */}
