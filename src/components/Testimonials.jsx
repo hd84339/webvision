@@ -33,7 +33,7 @@ const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonial
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#F8FAFC] py-24 overflow-hidden relative">
+    <section className="bg-[#F8FAFC] py-10 sm:py-12 overflow-hidden relative">
       {/* Background Decorative Blobs */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full blur-[120px] opacity-50 -translate-x-1/2" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-100 rounded-full blur-[120px] opacity-50 translate-x-1/2" />
@@ -41,15 +41,15 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-blue-600 font-bold tracking-[0.3em] text-sm uppercase">Success Stories</span>
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 mt-4 mb-6">
-            Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Visionaries</span>
+          <span className="text-blue-600 font-bold tracking-[0.3em] text-sm uppercase">Testimonials</span>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-6">
+            Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Success Stories</span>
           </h2>
           <div className="flex justify-center gap-1">
             {[...Array(5)].map((_, i) => (
@@ -127,7 +127,7 @@ const Testimonials = () => {
 
       {/* --- Modern Call to Action --- */}
       <motion.div
-        className="text-center mt-20 px-4"
+        className="text-center mt-12 px-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -143,7 +143,7 @@ const Testimonials = () => {
         </motion.a>
       </motion.div>
 
-      <style jsx>{`
+      <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
         }

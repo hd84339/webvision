@@ -73,34 +73,21 @@ const Services = () => {
     };
 
     return (
-        <section className="relative bg-slate-50 py-24 px-4 overflow-hidden">
-            {/* Background Decorative Circles */}
-            <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100/50 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-
-            <div className="max-w-7xl mx-auto relative z-10">
+        <section className="bg-gray-50 py-10 sm:py-12 px-4">
+            <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-20"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                    className="text-center mb-10 md:mb-12"
                 >
-                    <motion.span
-                        className="text-blue-600 font-bold tracking-widest uppercase text-sm"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        Expertise
-                    </motion.span>
-                    <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-4">
-                        Innovative Solutions
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                        Our Premium Services
                     </h2>
-                    <div className="h-1.5 w-24 bg-blue-600 mx-auto rounded-full mb-6" />
-                    <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                        Empowering businesses with cutting-edge technology and strategic digital transformation.
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                        We deliver a comprehensive suite of digital solutions designed to accelerate your business growth and ensure long-term success in the competitive digital landscape.
                     </p>
                 </motion.div>
 

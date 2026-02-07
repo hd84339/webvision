@@ -88,23 +88,29 @@ const marqueeVariants = {
 const TeamSection = () => {
 
     return (
-        <section className="bg-gray-50 font-sans py-20 sm:py-24">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
-                {/* Section Header */}
-                <motion.div
-                    className="text-center mb-16"
-                    initial={{ opacity: 0, y: -30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-                        Meet Our <span className="text-blue-600">Specialist Team</span>
-                    </h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
-                        Dedicated experts driving innovation and quality in every project.
+        <section className="bg-white py-10 sm:py-12 px-6">
+            <div className="max-w-7xl mx-auto">
+                {/* --- Header --- */}
+                <div className="text-center mb-16">
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        className="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase mb-3 block"
+                    >
+                        Our Team
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        className="text-3xl md:text-5xl font-black text-slate-900 mb-4"
+                    >
+                        Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Experts</span>
+                    </motion.h2>
+                    <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-6"></div>
+                    <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
+                        The creative minds and technical wizards driving your digital transformation.
                     </p>
-                </motion.div>
+                </div>
 
                 {/* --- Auto-Scrolling Marquee Container --- */}
                 <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_white_200px,_white_calc(100%-200px),transparent_100%)]">

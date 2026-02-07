@@ -38,7 +38,7 @@ const Navbar = () => {
       {/* --- CHANGE 2: The logo wrapper is back to being a simple flex item --- */}
       <div className="cursor-pointer flex items-center gap-3" onClick={() => handleNavigation('/')}>
         <img
-          className="h-20 w-auto object-contain"
+          className="h-20 w-auto object-contain bg-white rounded-lg p-1"
           src="/logo_v2.png"
           alt="Webvision Infotech Logo"
           loading="lazy"

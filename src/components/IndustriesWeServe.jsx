@@ -32,7 +32,7 @@ const IndustriesWeServe = () => {
   };
 
   return (
-    <section className="relative bg-[#F8FAFC] py-24 overflow-hidden">
+    <section className="relative bg-[#F8FAFC] py-10 sm:py-12 overflow-hidden">
       {/* 🧬 Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
         <svg width="100%" height="100%">
@@ -45,23 +45,23 @@ const IndustriesWeServe = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* --- Header --- */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase mb-4 block"
+            className="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase mb-3 block"
           >
-            Diverse Expertise
+            Industries We Empower
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-black text-slate-900 mb-6"
+            className="text-3xl md:text-5xl font-black text-slate-900 mb-4"
           >
             Industries <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">We Serve</span>
           </motion.h2>
-          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto">
+          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-4"></div>
+          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
             We bridge the gap between technology and business goals across 12+ global sectors.
           </p>
         </div>

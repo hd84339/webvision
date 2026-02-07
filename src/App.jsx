@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
 import Aboutus from "./components/About";
 import Services from "./components/Services";
 import IndustriesWeServe from "./components/IndustriesWeServe";
@@ -15,12 +15,13 @@ import ScrollToTop from "./components/ScrollToTop";
 import SEO from "./components/SEO";
 
 // Lazy-loaded page components for better performance (route-level code splitting)
-const AboutUs = lazy(() => import("./pages/AboutUs"));
-const OurService = lazy(() => import("./pages/OurService"));
-const Portfolio = lazy(() => import("./pages/OurPortfolioItems"));
-const OurProducts = lazy(() => import("./pages/OurProducts"));
-const OurClients = lazy(() => import("./pages/OurClients"));
-const Contact = lazy(() => import("./pages/Contact"));
+// Lazy-loaded page components for better performance (route-level code splitting)
+const AboutUs = lazy(() => import("./pages/AboutPage"));
+const OurService = lazy(() => import("./pages/ServicesPage"));
+const Portfolio = lazy(() => import("./pages/PortfolioPage"));
+const OurProducts = lazy(() => import("./pages/ProductsPage"));
+const OurClients = lazy(() => import("./pages/ClientsPage"));
+const Contact = lazy(() => import("./pages/ContactPage"));
 const AppDevlopPage = lazy(() => import("./pages/servicesPages/AppDevlopPage"));
 const SoftDevlopPage = lazy(
   () => import("./pages/servicesPages/SoftDevlopPage"),
@@ -35,7 +36,7 @@ const ItBusinessPage = lazy(
 const ERPCRMPage = lazy(() => import("./pages/servicesPages/ERPCRMPage"));
 const SeoPage = lazy(() => import("./pages/servicesPages/SeoPage"));
 const SmmPage = lazy(() => import("./pages/servicesPages/SmmPage"));
-const HeroSection = lazy(() => import("./pages/HeroSection"));
+const HeroSection = lazy(() => import("./components/HeroSection"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
 
 const Home = () => {
@@ -47,11 +48,13 @@ const Home = () => {
         url="/"
       />
       <HeroSection />
-      <Hero />
-      <Services />
-      <IndustriesWeServe />
+
+      
+      
       <Aboutus />
+      <Services />
       <TeamSection />
+      <IndustriesWeServe />
       <Testimonials />
     </>
   );
