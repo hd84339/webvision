@@ -56,8 +56,8 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               whileHover={{ scale: 1.05 }}
               className={`px-4 py-1 border rounded-full cursor-pointer text-sm font-medium transition-all duration-200 ${location.pathname === link.path
-                ? 'bg-black text-white shadow-md'
-                : 'text-black border-black hover:bg-gray-100'
+                ? 'bg-pink-600 text-white shadow-md border-pink-600'
+                : 'text-gray-700 border-transparent hover:text-pink-600 hover:bg-pink-50'
                 }`}
             >
               {link.name}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button (No changes needed, now works correctly) */}
       <div className="md:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800 hover:text-pink-600 transition-colors">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -90,8 +90,8 @@ const Navbar = () => {
               <motion.div
                 whileTap={{ scale: 0.95 }}
                 className={`w-11/12 py-2 border rounded-full text-center text-sm font-medium transition-all duration-200 ${location.pathname === link.path
-                  ? 'bg-black text-white shadow'
-                  : 'text-black border-black hover:bg-gray-100'
+                  ? 'bg-pink-600 text-white shadow border-pink-600'
+                  : 'text-gray-700 border-gray-200 hover:text-pink-600 hover:bg-pink-50'
                   }`}
               >
                 {link.name}

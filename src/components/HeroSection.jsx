@@ -92,7 +92,7 @@ const HeroSection = () => {
       className="
         relative
         w-full
-        h-[85vh] md:h-screen
+        h-[85vh]
         max-h-[1080px]
         overflow-hidden
         bg-black

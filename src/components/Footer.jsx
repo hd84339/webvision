@@ -31,7 +31,7 @@ const Footer = () => {
       className="
         overflow-hidden
         text-gray-300
-        bg-[#0B0F19]
+        bg-gray-950
         relative
       "
     >
@@ -39,7 +39,7 @@ const Footer = () => {
       <div
         className="
           w-full h-px
-          bg-gradient-to-r from-transparent via-blue-500/50 to-transparent
+          bg-gradient-to-r from-transparent via-pink-500/50 to-transparent
           absolute top-0 left-1/2 -translate-x-1/2
         "
       />
@@ -98,7 +98,7 @@ const Footer = () => {
               className="
                 mb-6 pl-3
                 text-lg font-bold text-white
-                border-l-4 border-blue-500
+                border-l-4 border-pink-500
               "
             >
               Our Services
@@ -141,7 +141,7 @@ const Footer = () => {
                 >
                   <FaChevronRight
                     className="
-                      text-blue-500 text-[10px]
+                      text-pink-500 text-[10px]
                       opacity-0 transition-all
                       group-hover:opacity-100
                     "
@@ -150,7 +150,7 @@ const Footer = () => {
                     to={service.url}
                     className="
                       transition-colors
-                      hover:text-blue-400
+                      hover:text-pink-400
                     "
                   >
                     {service.label}
@@ -166,7 +166,7 @@ const Footer = () => {
               className="
                 mb-6 pl-3
                 text-lg font-bold text-white
-                border-l-4 border-blue-500
+                border-l-4 border-pink-500
               "
             >
               Useful Links
@@ -193,7 +193,7 @@ const Footer = () => {
                 >
                   <FaChevronRight
                     className="
-                      text-blue-500 text-[10px]
+                      text-pink-500 text-[10px]
                       opacity-0 transition-all
                       group-hover:opacity-100
                     "
@@ -202,7 +202,7 @@ const Footer = () => {
                     to={item.url}
                     className="
                       transition-colors
-                      hover:text-blue-400
+                      hover:text-pink-400
                     "
                   >
                     {item.label}
@@ -223,7 +223,7 @@ const Footer = () => {
               className="
                 mb-6 pl-3
                 text-lg font-bold text-white
-                border-l-4 border-blue-500
+                border-l-4 border-pink-500
               "
             >
               Connect With Us
@@ -243,7 +243,7 @@ const Footer = () => {
                 <MdLocationOn
                   className="
                     flex-shrink-0
-                    text-blue-500 text-xl
+                    text-pink-500 text-xl
                   "
                 />
                 <p
@@ -263,7 +263,7 @@ const Footer = () => {
                 <MdEmail
                   className="
                     flex-shrink-0
-                    text-blue-500 text-xl
+                    text-pink-500 text-xl
                   "
                 />
                 <a
@@ -285,7 +285,7 @@ const Footer = () => {
                 <MdPhone
                   className="
                     flex-shrink-0
-                    text-blue-500 text-xl
+                    text-pink-500 text-xl
                   "
                 />
                 <p
@@ -327,7 +327,7 @@ const Footer = () => {
               ].map((social, idx) => (
                 <motion.a
                   key={idx}
-                  whileHover={{ y: -5, backgroundColor: "#3b82f6" }}
+                  whileHover={{ y: -5, backgroundColor: "#db2777" }}
                   whileTap={{ scale: 0.9 }}
                   href={social.link}
                   target="_blank"
@@ -384,9 +384,9 @@ const Footer = () => {
             <a
               href="https://harshdubeyhrd.netlify.app/"
               className="
-                text-blue-500/80
+                text-pink-500/80
                 transition-colors
-                hover:text-blue-400
+                hover:text-pink-400
               "
             >
               Harsh Dubey
