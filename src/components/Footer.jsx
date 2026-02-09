@@ -66,35 +66,27 @@ const Footer = () => {
           {/* --- About Section --- */}
           <motion.div
             variants={itemVariants}
-            className="
-              space-y-6
-            "
+            className="flex flex-col items-start gap-1"
           >
-            <Link to="/">
+            <Link to="/" className="block">
               <img
-                src="/logo_v2.png"
+                src="/logo_v3.png"
                 alt="Webvision Infotech logo"
                 loading="lazy"
                 className="
-                  w-32
+                  h-44 w-auto
+                  object-contain
                   brightness-110
-                  md:w-40
                 "
               />
             </Link>
-            <h2
-              className="
-                text-xl font-bold text-white tracking-tight
-              "
-            >
-              Webvision Softech
-            </h2>
+
             <p
               className="
                 text-sm leading-relaxed text-gray-400
               "
             >
-              A “One Stop IT Solution” for modern business processes. We
+              A "One Stop IT Solution" for modern business processes. We
               specialize in crafting high-performance web and window
               applications that drive digital growth.
             </p>

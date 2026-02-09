@@ -32,25 +32,16 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       // h-24 sets a consistent height to accommodate the larger logo.
-      className="sticky top-0 z-50 h-24 bg-white/80 backdrop-blur-lg shadow-md px-6 flex justify-between items-center transition duration-300"
+      className="sticky top-0 z-50 h-20 bg-white/80 backdrop-blur-lg shadow-md px-6 flex justify-between items-center transition duration-300"
     >
       {/* Logo */}
-      {/* --- CHANGE 2: The logo wrapper is back to being a simple flex item --- */}
-      <div className="cursor-pointer flex items-center gap-3" onClick={() => handleNavigation('/')}>
+      <div className="cursor-pointer flex items-center gap-3 h-full" onClick={() => handleNavigation('/')}>
         <img
-          className="h-20 w-auto object-contain bg-white rounded-lg p-1"
-          src="/logo_v2.png"
+          className="h-44 w-auto object-contain brightness-110"
+          src="/logo_v3.png"
           alt="Webvision Infotech Logo"
           loading="lazy"
         />
-        <div className="flex flex-col justify-center">
-          <span className="text-2xl md:text-3xl font-black italic tracking-tighter text-slate-900 font-['Poppins'] leading-none">
-            Web<span className="text-blue-600">vision</span>
-          </span>
-          <span className="text-[0.65rem] md:text-xs font-bold tracking-[0.3em] text-slate-500 uppercase mt-1">
-            Softech Pvt. Ltd.
-          </span>
-        </div>
       </div>
 
       {/* Desktop Menu (No changes needed) */}
@@ -87,7 +78,7 @@ const Navbar = () => {
         <motion.div
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="absolute top-24 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-2 py-4 md:hidden z-50"
+          className="absolute top-20 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-2 py-4 md:hidden z-50"
         >
           {navLinks.map((link, index) => (
             <Link
