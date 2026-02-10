@@ -251,7 +251,7 @@ const Footer = () => {
                     text-gray-400
                   "
                 >
-                  Office No. 201, Gokul Arcade, Navghar Road, Vasai West, Palghar, Maharashtra 401202.
+                  B4, 2nd Floor, 224/A, Ambadi Rd, Sai Nagar, Vasai West, Palghar, Vasai-Virar, Maharashtra 401202
                 </p>
               </div>
               <div

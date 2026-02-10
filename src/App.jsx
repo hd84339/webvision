@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar";
 import Aboutus from "./components/About";
 import Services from "./components/Services";
 import IndustriesWeServe from "./components/IndustriesWeServe";
-import TeamSection from "./components/TeamSection";
 import Testimonials from "./components/Testimonials";
 import ChatbotSystem from "./components/ChatbotSystem";
 import Footer from "./components/Footer";
@@ -43,17 +42,16 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Webvision Infotech"
-        description="Webvision Infotech — Software, web and app development; SEO and digital services."
+        title="Webvision Softech"
+        description="Webvision Softech — Software, web and app development; SEO and digital services."
         url="/"
       />
       <HeroSection />
 
-      
-      
+
+
       <Aboutus />
       <Services />
-      <TeamSection />
       <IndustriesWeServe />
       <Testimonials />
     </>
