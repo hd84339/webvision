@@ -31,7 +31,7 @@ const Footer = () => {
       className="
         overflow-hidden
         text-gray-300
-        bg-gray-950
+        bg-black
         relative
       "
     >
@@ -251,7 +251,7 @@ const Footer = () => {
                     text-gray-400
                   "
                 >
-                  Vasai West, Palghar, Maharashtra 401202.
+                  Office No. 201, Gokul Arcade, Navghar Road, Vasai West, Palghar, Maharashtra 401202.
                 </p>
               </div>
               <div

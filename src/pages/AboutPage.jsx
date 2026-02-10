@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Aboutus from '../components/About';
-import TeamSection from '../components/TeamSection';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
@@ -53,7 +52,7 @@ const AboutUs = () => (
     >
         <SEO
             title="About Us"
-            description="Learn about Webvision Infotech — One Stop IT Solution for web and windows applications."
+            description="Learn about Webvision Softech — One Stop IT Solution for web and windows applications."
             url="/about"
             image="/public/images/native-banner.avif"
         />
@@ -72,7 +71,7 @@ const AboutUs = () => (
                         variants={childVariants}
                     >
                         About <br />
-                        <span className="text-blue-600">WEBVISION INFOTECH</span>
+                        <span className="text-blue-600">WEBVISION SOFTECH</span>
                     </motion.h1>
 
                     <motion.p
@@ -193,7 +192,6 @@ const AboutUs = () => (
             </motion.div>
         </motion.div>
         <div className='mt-16'> <Aboutus /></div>
-        <div className='mt-16'> <TeamSection /> </div>
     </main>
 );
 
