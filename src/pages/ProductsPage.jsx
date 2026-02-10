@@ -100,7 +100,7 @@ const ProductSection = ({ product, index }) => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {product.features?.map((feature, i) => (
                             <div key={i} className="flex items-center gap-2 group/feat">
-                                <CheckCircle size={18} className="text-blue-500 group-hover/feat:scale-125 transition-transform" />
+                                <CheckCircle size={18} className="text-pink-500 group-hover/feat:scale-125 transition-transform" />
                                 <span className="text-slate-700 font-medium">{feature}</span>
                             </div>
                         ))}
@@ -110,7 +110,7 @@ const ProductSection = ({ product, index }) => {
                             href="tel:+919322347666"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-3 bg-slate-900 text-white font-black py-4 px-10 rounded-full shadow-2xl hover:bg-blue-600 transition-all duration-300 group"
+                            className="inline-flex items-center gap-3 bg-slate-900 text-white font-black py-4 px-10 rounded-full shadow-2xl hover:bg-pink-600 transition-all duration-300 group"
                         >
                             Request a Demo
                             <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
@@ -134,7 +134,7 @@ const OurProducts = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase"
+                        className="inline-flex items-center gap-2 bg-pink-50 text-pink-600 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase"
                     >
                         <Zap size={14} /> Global Enterprise Solutions
                     </motion.div>
@@ -145,7 +145,7 @@ const OurProducts = () => {
                         className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight"
                     >
                         Future-Ready <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">
                             Software Products
                         </span>
                     </motion.h1>

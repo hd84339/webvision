@@ -41,11 +41,11 @@ const ContactInfoCard = ({ icon: Icon, title, lines, link }) => (
     <div
       className="
             p-4 mb-5
-            text-blue-600
-            bg-blue-50
+            text-pink-600
+            bg-pink-50
             rounded-2xl
             transition-colors
-            group-hover:bg-blue-600 group-hover:text-white duration-300
+            group-hover:bg-pink-600 group-hover:text-white duration-300
           "
     >
       <Icon size={28} />
@@ -134,7 +134,7 @@ const Contact = () => {
           <div
             className="
                         w-[500px] h-[500px]
-                        bg-blue-600
+                        bg-pink-600
                         rounded-full
                         absolute top-0 right-0 blur-[120px] translate-x-1/2 -translate-y-1/2
                       "
@@ -162,7 +162,7 @@ const Contact = () => {
             Let's Design Your{" "}
             <span
               className="
-                        text-blue-400
+                        text-pink-400
                       "
             >
               Digital Future
@@ -290,7 +290,7 @@ const Contact = () => {
                                     bg-slate-50
                                     border border-transparent rounded-2xl
                                     transition-all
-                                    focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none
+                                    focus:ring-2 focus:ring-pink-500 focus:bg-white outline-none
                                   "
                 />
                 <input
@@ -306,7 +306,7 @@ const Contact = () => {
                                     bg-slate-50
                                     border border-transparent rounded-2xl
                                     transition-all
-                                    focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none
+                                    focus:ring-2 focus:ring-pink-500 focus:bg-white outline-none
                                   "
                 />
               </div>
@@ -351,10 +351,10 @@ const Contact = () => {
                                 w-full
                                 py-5
                                 text-white font-black
-                                bg-blue-600
+                                bg-pink-600
                                 rounded-2xl
-                                shadow-xl shadow-blue-200 transition-all
-                                hover:bg-blue-700 items-center justify-center gap-3
+                                shadow-xl shadow-pink-200 transition-all
+                                hover:bg-pink-700 items-center justify-center gap-3
                               "
               >
                 <Send size={20} />
@@ -399,8 +399,8 @@ const Contact = () => {
                 className="
                                 inline-flex
                                 px-4 py-2
-                                text-blue-700 text-sm font-bold
-                                bg-blue-50
+                                text-pink-700 text-sm font-bold
+                                bg-pink-50
                                 rounded-full
                                 items-center gap-2
                               "

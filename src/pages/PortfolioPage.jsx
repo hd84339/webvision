@@ -169,7 +169,7 @@ const PortfolioCard = ({ item, index }) => {
                     mb-2
                     text-xl font-black text-slate-900
                     transition-colors
-                    group-hover:text-blue-600
+                    group-hover:text-pink-600
                   "
         >
           {item.title}
@@ -214,7 +214,7 @@ const PortfolioCard = ({ item, index }) => {
           whileHover={{ x: 5 }}
           className="
                     inline-flex
-                    text-blue-600 font-black text-xs tracking-tight
+                    text-pink-600 font-black text-xs tracking-tight
                     items-center gap-2 uppercase
                   "
         >
@@ -270,7 +270,7 @@ const Portfolio = () => {
             Our Recent{" "}
             <span
               className="
-                            text-blue-600
+                            text-pink-600
                           "
             >
               Work
@@ -304,11 +304,10 @@ const Portfolio = () => {
                             text-xs font-bold
                             rounded-full
                             transition-all
-                            ${
-                              filter === cat
-                                ? "bg-blue-600 text-white shadow-lg"
-                                : "bg-white text-slate-500 hover:bg-slate-50"
-                            }
+                            ${filter === cat
+                  ? "bg-pink-600 text-white shadow-lg"
+                  : "bg-white text-slate-500 hover:bg-slate-50"
+                }
                           `}
             >
               {cat}

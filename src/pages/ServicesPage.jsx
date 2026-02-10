@@ -21,7 +21,7 @@ const services = [
       "Custom tailor-made solutions for complex business architectures.",
     icon: <Code size={28} />,
     link: "/services/software-development",
-    color: "from-blue-500 to-cyan-400",
+    color: "from-pink-500 to-rose-400",
   },
   {
     name: "Website Development",
@@ -51,7 +51,7 @@ const services = [
     description: "End-to-end digital transformation for modern enterprises.",
     icon: <Briefcase size={28} />,
     link: "/services/it-business",
-    color: "from-indigo-500 to-blue-400",
+    color: "from-rose-500 to-pink-400",
   },
   {
     name: "ERP & CRM Solution",
@@ -67,7 +67,7 @@ const services = [
       "Dominating search results with data-driven organic strategies.",
     icon: <TrendingUp size={28} />,
     link: "/services/seo",
-    color: "from-teal-500 to-cyan-400",
+    color: "from-pink-500 to-rose-400",
   },
   {
     name: "Social Media Marketing",
@@ -122,7 +122,7 @@ const OurService = () => {
         <div
           className="
             w-[40%] h-[40%]
-            bg-blue-100
+            bg-pink-100
             rounded-full
             absolute top-[-10%] left-[-10%] blur-[120px]
           "
@@ -160,7 +160,7 @@ const OurService = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="
-              text-blue-600 font-bold tracking-[0.25em] text-sm
+              text-pink-600 font-bold tracking-[0.25em] text-sm
               uppercase
             "
           >
@@ -177,7 +177,7 @@ const OurService = () => {
             <span
               className="
                 text-transparent
-                bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600
+                bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600
               "
             >
               Capabilities
@@ -187,7 +187,7 @@ const OurService = () => {
             className="
               h-1.5 w-24
               mx-auto mb-8
-              bg-blue-600
+              bg-pink-600
               rounded-full
             "
           />
@@ -240,7 +240,7 @@ const OurService = () => {
                     bg-white
                     rounded-3xl border border-slate-100
                     shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] transition-all
-                    relative duration-500 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] group-hover:border-blue-100 justify-between
+                    relative duration-500 group-hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] group-hover:border-pink-100 justify-between
                   "
                 >
                   {/* Subtle Gradient Hover Background */}
@@ -274,7 +274,7 @@ const OurService = () => {
                         mb-3
                         text-xl font-bold text-slate-900
                         transition-colors
-                        group-hover:text-blue-600
+                        group-hover:text-pink-600
                       "
                     >
                       {service.name}
@@ -293,7 +293,7 @@ const OurService = () => {
                   <div
                     className="
                       flex
-                      text-blue-600 font-bold text-xs tracking-widest
+                      text-pink-600 font-bold text-xs tracking-widest
                       items-center uppercase
                     "
                   >

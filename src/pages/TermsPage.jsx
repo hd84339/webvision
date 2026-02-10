@@ -223,7 +223,7 @@ const TermsPage = () => {
               className="
                 mb-6
                 text-3xl font-bold text-slate-900
-                underline decoration-blue-500 decoration-4
+                underline decoration-pink-500 decoration-4
               "
             >
               Data & Privacy
@@ -243,7 +243,7 @@ const TermsPage = () => {
                   className="
                     flex-shrink-0
                     h-8 w-8
-                    text-blue-600
+                    text-pink-600
                   "
                 />
                 <p>
@@ -300,7 +300,7 @@ const TermsPage = () => {
               variants={fadeInUp}
               className="
                 p-8
-                bg-blue-100
+                bg-pink-100
                 rounded-2xl
                 shadow-inner
               "

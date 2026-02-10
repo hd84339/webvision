@@ -382,7 +382,7 @@ const Footer = () => {
           >
             Engineered with Precision by{" "}
             <a
-              href="https://harshdubeyhrd.netlify.app/"
+              href="https://www.linkedin.com/in/harsh-dubey-498498256/"
               className="
                 text-pink-500/80
                 transition-colors

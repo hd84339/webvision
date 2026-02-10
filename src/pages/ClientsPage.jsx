@@ -66,7 +66,7 @@ const ClientCallToAction = () => {
                 <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
+                    className="bg-pink-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-pink-700 transition-colors duration-300"
                 >
                     Get In Touch
                 </motion.button>
