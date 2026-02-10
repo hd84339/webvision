@@ -31,7 +31,7 @@ const Aboutus = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="absolute inset-0 bg-blue-100 rounded-full blur-3xl scale-75 opacity-50" />
+          <div className="absolute inset-0 bg-pink-100 rounded-full blur-3xl scale-75 opacity-50" />
           <motion.img
             src={"/hero.png"}
             alt="About WebVision"
@@ -44,7 +44,7 @@ const Aboutus = () => {
         {/* 📝 Right: Content Section */}
         <div className="flex-1">
           <motion.h2
-            className="text-3xl font-bold mb-6 text-black border-l-4 border-blue-500 pl-4"
+            className="text-3xl font-bold mb-6 text-black border-l-4 border-pink-500 pl-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -68,15 +68,15 @@ const Aboutus = () => {
             {aboutCards.map((card, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:bg-white hover:border-blue-100 cursor-default"
+                className="bg-gray-50 p-5 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:bg-white hover:border-pink-100 cursor-default"
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 + (index * 0.1), duration: 0.5 }}
                 whileHover={{ x: 5 }}
               >
-                <h3 className="font-bold text-lg text-blue-600 mb-1 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                <h3 className="font-bold text-lg text-pink-600 mb-1 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-pink-500 rounded-full" />
                   {card.title}
                 </h3>
                 <p className="text-gray-600 text-sm ml-4">{card.text}</p>
@@ -93,7 +93,7 @@ const Aboutus = () => {
             transition={{ delay: 0.6 }}
           >
             <motion.button
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-blue-500/30 transition-all"
+              className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-pink-500/30 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
