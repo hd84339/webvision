@@ -124,7 +124,7 @@ const Services = () => {
 
                                     {/* Content Section */}
                                     <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-2xl font-bold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-2xl font-bold text-slate-800 mb-3 group-hover:text-pink-600 transition-colors">
                                             {service.title}
                                         </h3>
                                         <p className="text-slate-600 leading-relaxed mb-6">
@@ -151,7 +151,7 @@ const Services = () => {
                                         <div className="mt-auto flex items-center justify-between">
                                             <button
                                                 onClick={(e) => toggleExpand(e, index)}
-                                                className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-blue-600 transition-colors"
+                                                className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-pink-600 transition-colors"
                                             >
                                                 <span className="bg-slate-100 p-1 rounded-full">
                                                     <ArrowRight className={`w-4 h-4 transition-transform duration-300 ${expandedIndex === index ? 'rotate-90' : ''}`} />
@@ -159,7 +159,7 @@ const Services = () => {
                                                 {expandedIndex === index ? "LESS" : "DETAILS"}
                                             </button>
 
-                                            <span className="text-blue-600 font-black text-xs tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 duration-300">
+                                            <span className="text-pink-600 font-black text-xs tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 duration-300">
                                                 VIEW CASE STUDY
                                             </span>
                                         </div>

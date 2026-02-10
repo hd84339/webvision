@@ -49,7 +49,7 @@ const IndustriesWeServe = () => {
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-blue-600 font-bold tracking-[0.2em] text-sm uppercase mb-3 block"
+            className="text-pink-600 font-bold tracking-[0.2em] text-sm uppercase mb-3 block"
           >
             Industries We Empower
           </motion.span>
@@ -58,9 +58,9 @@ const IndustriesWeServe = () => {
             whileInView={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl font-black text-slate-900 mb-4"
           >
-            Industries <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">We Serve</span>
+            Industries <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-500">We Serve</span>
           </motion.h2>
-          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-4"></div>
+          <div className="w-24 h-1.5 bg-pink-600 mx-auto rounded-full mb-4"></div>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
             We bridge the gap between technology and business goals across 12+ global sectors.
           </p>
@@ -83,16 +83,16 @@ const IndustriesWeServe = () => {
               className="relative group bg-white/70 backdrop-blur-md border border-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)] overflow-hidden block"
             >
               {/* Card Hover Glow */}
-              <div aria-hidden="true" className="absolute -inset-2 bg-gradient-to-r from-blue-600 to-indigo-500 rounded-3xl opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500"></div>
+              <div aria-hidden="true" className="absolute -inset-2 bg-gradient-to-r from-pink-600 to-rose-500 rounded-3xl opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500"></div>
 
               {/* Icon Circle */}
-              <div aria-hidden="true" className="relative mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 shadow-inner">
+              <div aria-hidden="true" className="relative mb-6 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-50 text-pink-600 group-hover:bg-pink-600 group-hover:text-white transition-all duration-500 shadow-inner">
                 {item.icon}
               </div>
 
               {/* Text */}
               <div className="relative">
-                <h3 className="text-xl font-black text-slate-800 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-xl font-black text-slate-800 mb-2 group-hover:text-pink-600 transition-colors duration-300">
                   {item.name}
                 </h3>
                 <p className="text-sm text-slate-400 font-medium group-hover:text-slate-600">
@@ -101,14 +101,14 @@ const IndustriesWeServe = () => {
               </div>
 
               {/* Decorative Corner Accent */}
-              <div aria-hidden="true" className="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-600/5 rounded-full group-hover:scale-[3] transition-transform duration-700"></div>
+              <div aria-hidden="true" className="absolute -bottom-4 -right-4 w-12 h-12 bg-pink-600/5 rounded-full group-hover:scale-[3] transition-transform duration-700"></div>
             </motion.li>
           ))}
         </motion.ul>
       </div>
 
       {/* 🎨 Floating Gradient Blurs */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-100 rounded-full blur-[120px] opacity-40"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-pink-100 rounded-full blur-[120px] opacity-40"></div>
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-100 rounded-full blur-[120px] opacity-40"></div>
     </section>
   );

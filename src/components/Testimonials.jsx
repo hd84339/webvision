@@ -35,7 +35,7 @@ const Testimonials = () => {
   return (
     <section className="bg-[#F8FAFC] py-10 sm:py-12 overflow-hidden relative">
       {/* Background Decorative Blobs */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full blur-[120px] opacity-50 -translate-x-1/2" />
+      <div className="absolute top-0 left-0 w-72 h-72 bg-pink-100 rounded-full blur-[120px] opacity-50 -translate-x-1/2" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-100 rounded-full blur-[120px] opacity-50 translate-x-1/2" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -47,9 +47,9 @@ const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-blue-600 font-bold tracking-[0.3em] text-sm uppercase">Testimonials</span>
+          <span className="text-pink-600 font-bold tracking-[0.3em] text-sm uppercase">Testimonials</span>
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-6">
-            Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Success Stories</span>
+            Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">Success Stories</span>
           </h2>
           <div className="flex justify-center gap-1">
             {[...Array(5)].map((_, i) => (
@@ -94,7 +94,7 @@ const Testimonials = () => {
             >
               <div className="flex justify-between items-start mb-6">
                 <div className="bg-blue-50 p-3 rounded-2xl">
-                  <Quote className="text-blue-600" size={28} />
+                  <Quote className="text-pink-600" size={28} />
                 </div>
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-amber-400 fill-current" />)}
@@ -107,7 +107,7 @@ const Testimonials = () => {
 
               <div className="flex items-center pt-6 border-t border-slate-100">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-blue-400 blur-lg opacity-20 rounded-full" />
+                  <div className="absolute inset-0 bg-pink-400 blur-lg opacity-20 rounded-full" />
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
@@ -117,7 +117,7 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <h4 className="font-black text-slate-900 text-lg">{testimonial.name}</h4>
-                  <p className="text-sm font-bold text-blue-500 uppercase tracking-tighter">{testimonial.role}</p>
+                  <p className="text-sm font-bold text-pink-500 uppercase tracking-tighter">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>
@@ -135,7 +135,7 @@ const Testimonials = () => {
         <p className="text-slate-500 font-medium">Join 500+ satisfied businesses worldwide.</p>
         <motion.a
           href='/contact'
-          className="mt-8 bg-slate-900 text-white font-black py-4 px-10 rounded-2xl inline-flex items-center gap-3 shadow-2xl hover:bg-blue-600 transition-colors group"
+          className="mt-8 bg-slate-900 text-white font-black py-4 px-10 rounded-2xl inline-flex items-center gap-3 shadow-2xl hover:bg-pink-600 transition-colors group"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

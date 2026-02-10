@@ -71,7 +71,7 @@ const AboutUs = () => (
                         variants={childVariants}
                     >
                         About <br />
-                        <span className="text-blue-600">WEBVISION SOFTECH</span>
+                        <span className="text-pink-600">WEBVISION SOFTECH</span>
                     </motion.h1>
 
                     <motion.p
@@ -87,7 +87,7 @@ const AboutUs = () => (
                         variants={childVariants}
                     >
                         <motion.button
-                            className="bg-[#8BC4EC] hover:bg-blue-500 text-white font-bold px-8 py-3 rounded-full shadow-lg transition-colors duration-300 flex items-center group"
+                            className="bg-pink-400 hover:bg-pink-500 text-white font-bold px-8 py-3 rounded-full shadow-lg transition-colors duration-300 flex items-center group"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -164,7 +164,7 @@ const AboutUs = () => (
                 whileHover="whileHover"
                 className="bg-white rounded-2xl shadow-xl p-7 flex flex-col h-full"
             >
-                <h3 className="text-xl font-bold mb-3 text-blue-700">Our Vision</h3>
+                <h3 className="text-xl font-bold mb-3 text-pink-700">Our Vision</h3>
                 <p className="text-gray-700 text-base leading-relaxed">
                     Provide simple & effective IT solutions for complex business needs using latest technologies —
                     always cost-effective, always global.
@@ -175,7 +175,7 @@ const AboutUs = () => (
                 whileHover="whileHover"
                 className="bg-white rounded-2xl shadow-xl p-7 flex flex-col h-full"
             >
-                <h3 className="text-xl font-bold mb-3 text-indigo-600">Our Mission</h3>
+                <h3 className="text-xl font-bold mb-3 text-rose-600">Our Mission</h3>
                 <p className="text-gray-700 text-base leading-relaxed">
                     Empower entrepreneurs in emerging markets with affordable, efficient, and innovative IT solutions — focused on innovation, quality, and client success.
                 </p>

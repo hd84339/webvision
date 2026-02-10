@@ -159,7 +159,7 @@ const HeroSection = () => {
                 mb-6
                 text-sm md:text-lg
                 font-bold tracking-[0.2em]
-                text-blue-400
+                text-pink-400
                 uppercase
               "
             >
@@ -206,13 +206,13 @@ const HeroSection = () => {
                   inline-flex items-center gap-3
                   px-10 py-5
                   text-lg font-bold text-white
-                  bg-blue-600
+                  bg-pink-600
                   rounded-full
                   overflow-hidden
                   transition-all duration-300
-                  hover:bg-blue-700
-                  shadow-[0_0_20px_rgba(37,99,235,0.5)]
-                  hover:shadow-[0_0_30px_rgba(37,99,235,0.7)]
+                  hover:bg-pink-700
+                  shadow-[0_0_20px_rgba(236,72,153,0.5)]
+                  hover:shadow-[0_0_30px_rgba(236,72,153,0.7)]
                 "
               >
                 <span className="relative z-10">Explore Service</span>
@@ -241,7 +241,7 @@ const HeroSection = () => {
             className={`
               h-3 rounded-full transition-all duration-500 ease-out
               ${index === currentIndex
-                ? "w-12 bg-blue-500 shadow-[0_0_10px_#3b82f6]"
+                ? "w-12 bg-pink-500 shadow-[0_0_10px_#ec4899]"
                 : "w-3 bg-white/40 hover:bg-white/80"}
             `}
             aria-label={`Go to slide ${index + 1}`}
@@ -267,7 +267,7 @@ const FloatingOrbs = () => {
           key={i}
           className="absolute rounded-full blur-[80px]"
           style={{
-            background: i % 2 === 0 ? "#2563EB" : "#3B82F6", // Blue shades
+            background: i % 2 === 0 ? "#ec4899" : "#f472b6", // Pink shades
             width: Math.random() * 400 + 200,
             height: Math.random() * 400 + 200,
             left: `${Math.random() * 100}%`,

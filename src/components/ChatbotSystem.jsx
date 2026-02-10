@@ -114,7 +114,7 @@ ${formState.query}
                             <motion.button
                                 key={index}
                                 onClick={() => setStep(option.action)}
-                                className="bg-blue-500 text-white p-2 rounded-lg text-sm flex items-center shadow-lg hover:bg-blue-600 transition"
+                                className="bg-pink-500 text-white p-2 rounded-lg text-sm flex items-center shadow-lg hover:bg-pink-600 transition"
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.2 + index * 0.1 }}
@@ -140,7 +140,7 @@ ${formState.query}
                                 value={formState.name}
                                 onChange={handleFormChange}
                                 required
-                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-sm"
+                                className="w-full p-2 border border-gray-300 rounded-md focus:ring-pink-500 focus:border-pink-500 text-sm"
                             />
                             <input
                                 type="email"
@@ -168,7 +168,7 @@ ${formState.query}
                                 Send Mail <Send size={16} className="ml-2" />
                             </button>
                         </form>
-                        <button onClick={() => setStep(CHAT_STEPS.OPTIONS)} className="text-xs text-gray-500 hover:text-blue-500">
+                        <button onClick={() => setStep(CHAT_STEPS.OPTIONS)} className="text-xs text-gray-500 hover:text-pink-500">
                             ← Back to Options
                         </button>
                     </div>
@@ -178,7 +178,7 @@ ${formState.query}
                 return (
                     <div className="space-y-3">
                         <BotMessage>
-                            <MapPin size={18} className="inline mr-2 text-blue-500" />
+                            <MapPin size={18} className="inline mr-2 text-pink-500" />
                             Here is our corporate office address:
                         </BotMessage>
                         <div className="bg-white p-3 rounded-lg shadow-md text-sm">
@@ -187,7 +187,7 @@ ${formState.query}
                                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-500 text-xs mt-1 block hover:underline"
+                                className="text-pink-500 text-xs mt-1 block hover:underline"
                             >
                                 View on Google Maps
                             </a>
@@ -202,12 +202,12 @@ ${formState.query}
                 return (
                     <div className="space-y-3">
                         <BotMessage>
-                            <Phone size={18} className="inline mr-2 text-blue-500" />
+                            <Phone size={18} className="inline mr-2 text-pink-500" />
                             You can reach us directly on these numbers:
                         </BotMessage>
                         <div className="bg-white p-3 rounded-lg shadow-md text-sm space-y-2">
                             <p>
-                                <a href={`tel:${PRIMARY_PHONE}`} className="text-blue-500 font-semibold hover:underline">{PRIMARY_PHONE}</a> (Primary)
+                                <a href={`tel:${PRIMARY_PHONE}`} className="text-pink-500 font-semibold hover:underline">{PRIMARY_PHONE}</a> (Primary)
                             </p>
                             <p>
                                 <a href={`tel:${SECONDARY_PHONE}`} className="text-blue-500 font-semibold hover:underline">{SECONDARY_PHONE}</a> (Secondary)
@@ -233,12 +233,12 @@ ${formState.query}
             className="fixed bottom-4 right-4 z-[1000] w-[90vw] max-w-sm h-[70vh] max-h-[500px] bg-white rounded-xl shadow-2xl flex flex-col overflow-hidden"
         >
             {/* Header */}
-            <div className="bg-blue-600 text-white p-4 flex justify-between items-center shadow-lg">
+            <div className="bg-pink-600 text-white p-4 flex justify-between items-center shadow-lg">
                 <div className="flex items-center">
                     <MessageSquare size={24} className="mr-2" />
                     <h3 className="font-bold text-lg">Web Vision Chatbot</h3>
                 </div>
-                <button onClick={onClose} className="p-1 rounded-full hover:bg-blue-500 transition">
+                <button onClick={onClose} className="p-1 rounded-full hover:bg-pink-500 transition">
                     <X size={20} />
                 </button>
             </div>

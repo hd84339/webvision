@@ -75,7 +75,7 @@ export default function InlineContactForm({
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
           <motion.div variants={itemVariants} className="relative group">
-            <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-blue-500 transition-colors" size={18} />
+            <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-pink-500 transition-colors" size={18} />
             <input
               name="name"
               value={form.name}
@@ -83,7 +83,7 @@ export default function InlineContactForm({
               required
               aria-label="Full Name"
               placeholder="Full Name"
-              className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all placeholder:text-gray-400"
+              className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-500/20 focus:border-pink-500 transition-all placeholder:text-gray-400"
             />
           </motion.div>
 
@@ -121,7 +121,7 @@ export default function InlineContactForm({
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             type="submit"
-            className="flex items-center justify-center gap-2 w-full md:w-auto px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-[0_10px_20px_rgba(37,99,235,0.2)] transition-all"
+            className="flex items-center justify-center gap-2 w-full md:w-auto px-10 py-4 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-xl shadow-[0_10px_20px_rgba(236,72,153,0.2)] transition-all"
           >
             <span>Send Message</span>
             <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

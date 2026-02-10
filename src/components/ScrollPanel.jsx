@@ -33,7 +33,7 @@ export default function ScrollPanel() {
     {
       id: 'phone',
       icon: <Phone />,
-      bgColor: 'bg-blue-500',
+      bgColor: 'bg-pink-500',
       href: 'tel:+919322347666', // Fixed whitespace in link
       label: 'Call Us',
     },
