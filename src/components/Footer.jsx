@@ -30,8 +30,8 @@ const Footer = () => {
     <footer
       className="
         overflow-hidden
-        text-gray-300
-        bg-black
+        text-gray-800
+        bg-gradient-to-br from-pink-50 via-pink-100 to-rose-100
         relative
       "
     >
@@ -83,7 +83,7 @@ const Footer = () => {
 
             <p
               className="
-                text-sm leading-relaxed text-gray-400
+                text-sm leading-relaxed text-gray-700
               "
             >
               A "One Stop IT Solution" for modern business processes. We
@@ -97,7 +97,7 @@ const Footer = () => {
             <h3
               className="
                 mb-6 pl-3
-                text-lg font-bold text-white
+                text-lg font-bold text-gray-900
                 border-l-4 border-pink-500
               "
             >
@@ -248,7 +248,7 @@ const Footer = () => {
                 />
                 <p
                   className="
-                    text-gray-400
+                    text-gray-700
                   "
                 >
                   B4, 2nd Floor, 224/A, Ambadi Rd, Sai Nagar, Vasai West, Palghar, Vasai-Virar, Maharashtra 401202
@@ -290,7 +290,7 @@ const Footer = () => {
                 />
                 <p
                   className="
-                    text-gray-400
+                    text-gray-700
                   "
                 >
                   +91 9322347666
@@ -335,7 +335,7 @@ const Footer = () => {
                   className="
                     p-2.5
                     text-white
-                    bg-gray-800/50
+                    bg-pink-500
                     rounded-xl
                     transition-all shadow-lg
                   "
@@ -355,19 +355,19 @@ const Footer = () => {
           className="
             mt-16 pt-8
             text-center
-            border-t border-gray-800/50
+            border-t border-pink-200
           "
         >
           <p
             className="
-              text-xs text-gray-500 tracking-widest
+              text-xs text-gray-600 tracking-widest
               uppercase
             "
           >
             © {new Date().getFullYear()}{" "}
             <span
               className="
-                text-white font-bold
+                text-gray-900 font-bold
               "
             >
               Webvision Softech Pvt. Ltd.
@@ -377,7 +377,7 @@ const Footer = () => {
           <p
             className="
               mt-2
-              text-xs text-gray-600
+              text-xs text-gray-700
             "
           >
             Engineered with Precision by{" "}
