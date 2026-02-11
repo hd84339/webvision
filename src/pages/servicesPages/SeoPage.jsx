@@ -75,8 +75,8 @@ const pricingPlans = [
       "5 Core Web Vitals Fixes",
       "Monthly Local Ranking Report",
     ],
-    accent: "text-blue-500",
-    shadow: "shadow-blue-300",
+    accent: "text-pink-600",
+    shadow: "shadow-pink-300",
   },
   {
     icon: Zap,
@@ -88,8 +88,8 @@ const pricingPlans = [
       "Content Strategy & Keyword Mapping",
       "Monthly Backlink Outreach (4 Links)",
     ],
-    accent: "text-[#3B82F6]",
-    shadow: "shadow-[#3B82F6]/50",
+    accent: "text-pink-600",
+    shadow: "shadow-pink-600/50",
   },
   {
     icon: DollarSign,
@@ -101,8 +101,8 @@ const pricingPlans = [
       "Advanced Structured Data Implementation",
       "Quarterly E-E-A-T Strategy Session",
     ],
-    accent: "text-blue-500",
-    shadow: "shadow-blue-300",
+    accent: "text-pink-600",
+    shadow: "shadow-pink-300",
   },
 ];
 
@@ -164,7 +164,7 @@ const PricingSection = () => (
         Our Transparent{" "}
         <span
           className="
-                    text-[#3B82F6]
+                    text-pink-600
                   "
         >
           Service Charges
@@ -274,7 +274,7 @@ const PricingSection = () => (
                                 text-center font-semibold
                                 rounded-lg
                                 transition duration-300
-                                ${plan.accent.includes("#FF8C00") ? "bg-[#3B82F6] text-white hover:blue-500" : "bg-gray-200 text-[#1F2937] hover:bg-blue-500"}
+                                ${plan.accent.includes("#FF8C00") ? "bg-pink-600 text-white hover:bg-pink-600" : "bg-gray-200 text-[#1F2937] hover:bg-pink-500"}
                               `}
               >
                 Select Plan
@@ -334,7 +334,7 @@ const HeroSection = () => (
           Mastering Search: From{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Code to Conversions
@@ -353,14 +353,14 @@ const HeroSection = () => (
           href="#card-grid"
           whileHover={{
             scale: 1.05,
-            boxShadow: "0px 5px 10px rgba(255, 140, 0, 0.4)",
+            boxShadow: "0px 5px 10px rgba(225, 29, 72, 0.4)",
           }}
           whileTap={{ scale: 0.95 }}
           className="
                     inline-block
                     mt-4 px-6 py-3
                     text-white font-semibold
-                    bg-[#3B82F6]
+                    bg-pink-600
                     rounded-lg
                     shadow-md
                   "
@@ -394,7 +394,7 @@ const HeroSection = () => (
             loading="lazy"
             className="
                         w-full h-full
-                        rounded-xl border-4 border-[#3B82F6]
+                        rounded-xl border-4 border-pink-600
                         shadow-2xl
                       "
           />
@@ -469,7 +469,7 @@ const ContentImageSection = () => (
           Technical Audit &{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Performance Fixes
@@ -527,7 +527,7 @@ const PillarCard = ({ icon: Icon, title, description }) => (
       className="
             w-10 h-10
             mb-3
-            text-[#3B82F6]
+            text-pink-600
           "
     />
     <h4
@@ -629,7 +629,7 @@ const CardGridSection = () => {
           The 8 Pillars of{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Digital Authority

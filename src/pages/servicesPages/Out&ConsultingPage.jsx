@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 // --- Styling & Config ---
-// Accent Color: Deep Blue (#3B82F6)
+// Accent Color: Premium Pink (pink-600)
 // Text Color: Deep Blue (#1F2937)
 
 // --- Pricing Card Data ---
@@ -50,8 +50,8 @@ const pricingPlans = [
       "24/7 Technical Support",
       "Project Management & Delivery",
     ],
-    accent: "text-[#3B82F6]",
-    shadow: "shadow-[#3B82F6]/50",
+    accent: "text-pink-600",
+    shadow: "shadow-pink-600/50",
   },
   {
     icon: Cloud,
@@ -127,7 +127,7 @@ const HeroSection = () => (
           Outsourcing & Consulting: From{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Strategy to Execution
@@ -146,14 +146,14 @@ const HeroSection = () => (
           href="#core-services"
           whileHover={{
             scale: 1.05,
-            boxShadow: "0px 5px 10px rgba(59, 130, 246, 0.4)",
+            boxShadow: "0px 5px 10px rgba(225, 29, 72, 0.4)",
           }}
           whileTap={{ scale: 0.95 }}
           className="
                     inline-block
                     mt-4 px-6 py-3
                     text-white font-semibold
-                    bg-[#3B82F6]
+                    bg-pink-600
                     rounded-lg
                     shadow-md
                   "
@@ -185,7 +185,7 @@ const HeroSection = () => (
             loading="lazy"
             className="
                         w-full h-full
-                        rounded-xl border-4 border-[#3B82F6]
+                        rounded-xl border-4 border-pink-600
                         shadow-2xl
                       "
           />
@@ -259,7 +259,7 @@ const MethodologySection = () => (
           Strategic Partnership &{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Expert Guidance
@@ -326,7 +326,7 @@ const PillarCard = ({ icon: Icon, title, description }) => (
       className="
             w-10 h-10
             mb-3
-            text-[#3B82F6]
+            text-pink-600
           "
     />
     <h4
@@ -428,7 +428,7 @@ const CardGridSection = () => {
           Our{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Outsourcing & Consulting Services
@@ -484,7 +484,7 @@ const PricingSection = () => (
         Outsourcing & Consulting{" "}
         <span
           className="
-                    text-[#3B82F6]
+                    text-pink-600
                   "
         >
           Service Models
@@ -571,7 +571,7 @@ const PricingSection = () => (
                                         flex-shrink-0
                                         w-5 h-5
                                         mr-3
-                                        text-[#3B82F6]
+                                        text-pink-600
                                       `}
                   />
                   <span>{feature}</span>
@@ -592,10 +592,10 @@ const PricingSection = () => (
                                 w-full
                                 py-3
                                 text-center font-semibold text-white
-                                bg-[#3B82F6]
+                                bg-pink-600
                                 rounded-lg
                                 shadow-md
-                                transition duration-300 hover:bg-blue-600
+                                transition duration-300 hover:bg-pink-700
                               `}
               >
                 Start Partnership

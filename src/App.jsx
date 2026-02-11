@@ -37,6 +37,9 @@ const SeoPage = lazy(() => import("./pages/servicesPages/SeoPage"));
 const SmmPage = lazy(() => import("./pages/servicesPages/SmmPage"));
 const HeroSection = lazy(() => import("./components/HeroSection"));
 const TermsPage = lazy(() => import("./pages/TermsPage"));
+const StatsSection = lazy(() => import("./components/StatsSection"));
+const ProcessFlow = lazy(() => import("./components/ProcessFlow"));
+const CTASection = lazy(() => import("./components/CTASection"));
 
 const Home = () => {
   return (
@@ -47,13 +50,13 @@ const Home = () => {
         url="/"
       />
       <HeroSection />
-
-
-
+      <StatsSection />
       <Aboutus />
       <Services />
+      <ProcessFlow />
       <IndustriesWeServe />
       <Testimonials />
+      <CTASection />
     </>
   );
 };

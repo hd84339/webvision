@@ -8,21 +8,21 @@ import {
 // Added Icons to the data for more visual impact
 const servicesList = [
     {
-        title: 'Web & App Development',
+        title: 'Web Development',
         icon: <Code className="w-6 h-6" />,
         description: 'Crafting responsive, high-performance websites and mobile applications tailored to your business needs.',
         extendedDescription: 'Our development process includes full-stack solutions using React, Node.js, and modern mobile frameworks. We focus on scalability, security, and clean code architecture.',
         imageUrl: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop',
-        link: "/servicesPages/WebDevPage",
+        link: "/services/web-development",
         color: "blue"
     },
     {
-        title: 'UI/UX Design',
+        title: 'App Development',
         icon: <Layout className="w-6 h-6" />,
         description: 'Designing intuitive, engaging, and user-centric interfaces that deliver a seamless user experience.',
         extendedDescription: 'We perform deep user research and wireframing to build prototypes that convert. Our designs prioritize accessibility and emotional engagement.',
         imageUrl: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop',
-        link: "/servicesPages/SoftDevPage",
+        link: "/services/app-development",
         color: "purple"
     },
     {
@@ -31,7 +31,7 @@ const servicesList = [
         description: 'Leveraging cloud infrastructure to provide scalable, secure, and cost-effective solutions for your business.',
         extendedDescription: 'From AWS to Google Cloud, we manage your migration and infrastructure. We implement CI/CD pipelines and auto-scaling to ensure 99.9% uptime.',
         imageUrl: 'https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop',
-        link: "/servicesPages/ERPCrmPage",
+        link: "/services/erp-crm",
         color: "cyan"
     },
     {
@@ -40,7 +40,7 @@ const servicesList = [
         description: 'Boosting your online presence with data-driven marketing strategies, from SEO to social media campaigns.',
         extendedDescription: 'Our marketing experts use AI-driven analytics to target your ideal audience. We specialize in high-ROI PPC campaigns and organic SEO growth.',
         imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop',
-        link: "/servicesPages/SeoPage",
+        link: "/services/seo",
         color: "orange"
     },
     {
@@ -49,7 +49,7 @@ const servicesList = [
         description: 'Ensuring your applications run smoothly with proactive maintenance, updates, and dedicated support.',
         extendedDescription: 'We provide 24/7 monitoring, security patching, and performance tuning. Our team ensures legacy systems stay compatible with modern standards.',
         imageUrl: 'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2070&auto=format&fit=crop',
-        link: "/servicesPages/SoftDevPage",
+        link: "/services/software-development",
         color: "green"
     },
     {
@@ -58,7 +58,7 @@ const servicesList = [
         description: 'Building a strong brand identity with memorable logos, style guides, and compelling brand narratives.',
         extendedDescription: 'We define your brand DNA. This includes visual identity systems, typography, color palettes, and a unique voice that resonates.',
         imageUrl: 'https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=2070&auto=format&fit=crop',
-        link: "/servicesPages/SmmPage",
+        link: "/services/smm",
         color: "pink"
     },
 ];
@@ -83,11 +83,14 @@ const Services = () => {
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                     className="text-center mb-10 md:mb-12"
                 >
+                    <span className="text-pink-600 font-bold tracking-[0.2em] text-sm uppercase mb-3 block">
+                        Everything You Need
+                    </span>
                     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                        Our Premium Services
+                        Our <span className="text-pink-600">Premium Services</span>
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                        We deliver a comprehensive suite of digital solutions designed to accelerate your business growth and ensure long-term success in the competitive digital landscape.
+                        We deliver a comprehensive suite of digital solutions designed to accelerate your business growth and ensure long-term success.
                     </p>
                 </motion.div>
 
@@ -104,7 +107,7 @@ const Services = () => {
                             <Link to={service.link} className="block group h-full">
                                 <motion.div
                                     whileHover={{ y: -10 }}
-                                    className="bg-white rounded-3xl overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.2)] transition-all duration-500 border border-slate-100 h-full flex flex-col"
+                                    className="bg-white rounded-3xl overflow-hidden shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_50px_-10px_rgba(236,72,153,0.3)] transition-all duration-500 border border-slate-100 group-hover:border-pink-500/30 h-full flex flex-col"
                                 >
                                     {/* Image Section with Overlay */}
                                     <div className="h-56 relative overflow-hidden">
@@ -117,7 +120,7 @@ const Services = () => {
                                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-60" />
 
                                         {/* Icon Badge */}
-                                        <div className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 text-white shadow-xl">
+                                        <div className="absolute bottom-4 left-4 bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 text-white shadow-xl group-hover:bg-pink-600 group-hover:border-pink-600 transition-colors duration-300">
                                             {service.icon}
                                         </div>
                                     </div>
@@ -153,7 +156,7 @@ const Services = () => {
                                                 onClick={(e) => toggleExpand(e, index)}
                                                 className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-pink-600 transition-colors"
                                             >
-                                                <span className="bg-slate-100 p-1 rounded-full">
+                                                <span className="bg-slate-100 p-1 rounded-full group-hover:bg-pink-50">
                                                     <ArrowRight className={`w-4 h-4 transition-transform duration-300 ${expandedIndex === index ? 'rotate-90' : ''}`} />
                                                 </span>
                                                 {expandedIndex === index ? "LESS" : "DETAILS"}

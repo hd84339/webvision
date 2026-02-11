@@ -123,14 +123,7 @@ const HeroSection = () => {
             bg-cover bg-center
           "
         >
-          {/* Enhanced Overlay for better text readability */}
-          <div
-            className="
-              absolute inset-0
-              bg-gradient-to-b from-black/70 via-black/50 to-black/80
-              backdrop-blur-[2px]
-            "
-          />
+
         </motion.div>
       </AnimatePresence>
 
@@ -152,15 +145,16 @@ const HeroSection = () => {
             animate="visible"
             exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
             variants={textVariants}
-            className="max-w-5xl"
+            className="max-w-4xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 p-8 md:p-12 rounded-3xl shadow-2xl"
           >
             <motion.h2
               className="
                 mb-6
                 text-sm md:text-lg
                 font-bold tracking-[0.2em]
-                text-pink-400
+                text-pink-500
                 uppercase
+                drop-shadow-sm
               "
             >
               Welcome to Webvision Softech Pvt. Ltd.
@@ -173,7 +167,7 @@ const HeroSection = () => {
                 font-black
                 text-white
                 tracking-tight
-                drop-shadow-2xl
+                drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]
               "
             >
               {slideData[currentIndex].text}
@@ -183,10 +177,11 @@ const HeroSection = () => {
               className="
                 mb-12
                 text-lg md:text-2xl
-                text-gray-200
-                font-light
+                text-white
+                font-medium
                 max-w-3xl mx-auto
                 leading-relaxed
+                drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]
               "
             >
               {slideData[currentIndex].description}
@@ -249,10 +244,7 @@ const HeroSection = () => {
         ))}
       </div>
 
-      {/* 🌊 Floating Orb Background (Subtle & Modern) */}
-      <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-        <FloatingOrbs />
-      </div>
+
     </section>
   );
 };

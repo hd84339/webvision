@@ -21,7 +21,7 @@ const services = [
       "Custom tailor-made solutions for complex business architectures.",
     icon: <Code size={28} />,
     link: "/services/software-development",
-    color: "from-pink-500 to-rose-400",
+    color: "from-pink-600 to-pink-400",
   },
   {
     name: "Website Development",
@@ -29,7 +29,7 @@ const services = [
       "High-performance, responsive websites with modern UX/UI standards.",
     icon: <Layers size={28} />,
     link: "/services/web-development",
-    color: "from-purple-500 to-pink-400",
+    color: "from-pink-700 to-pink-500",
   },
   {
     name: "App Development",
@@ -37,21 +37,21 @@ const services = [
       "Native and cross-platform mobile apps built for speed and scale.",
     icon: <AppWindow size={28} />,
     link: "/services/app-development",
-    color: "from-orange-500 to-yellow-400",
+    color: "from-pink-600 to-pink-400",
   },
   {
     name: "Outsourcing & Consulting",
     description: "Expert guidance to optimize your technical roadmap and team.",
     icon: <Users size={28} />,
     link: "/services/out-consulting",
-    color: "from-green-500 to-emerald-400",
+    color: "from-pink-700 to-pink-500",
   },
   {
     name: "IT Business Solution",
     description: "End-to-end digital transformation for modern enterprises.",
     icon: <Briefcase size={28} />,
     link: "/services/it-business",
-    color: "from-rose-500 to-pink-400",
+    color: "from-pink-600 to-pink-400",
   },
   {
     name: "ERP & CRM Solution",
@@ -59,7 +59,7 @@ const services = [
       "Automate your workflow with robust and scalable internal systems.",
     icon: <Database size={28} />,
     link: "/services/erp-crm",
-    color: "from-red-500 to-rose-400",
+    color: "from-pink-700 to-pink-500",
   },
   {
     name: "SEO Optimization",
@@ -67,7 +67,7 @@ const services = [
       "Dominating search results with data-driven organic strategies.",
     icon: <TrendingUp size={28} />,
     link: "/services/seo",
-    color: "from-pink-500 to-rose-400",
+    color: "from-pink-600 to-pink-400",
   },
   {
     name: "Social Media Marketing",
@@ -75,7 +75,7 @@ const services = [
       "Creative storytelling to grow your brand's digital footprint.",
     icon: <Share2 size={28} />,
     link: "/services/smm",
-    color: "from-fuchsia-500 to-purple-400",
+    color: "from-pink-700 to-pink-500",
   },
 ];
 
@@ -130,7 +130,7 @@ const OurService = () => {
         <div
           className="
             w-[40%] h-[40%]
-            bg-purple-100
+            bg-pink-200
             rounded-full
             absolute bottom-[-10%] right-[-10%] blur-[120px]
           "
@@ -177,7 +177,7 @@ const OurService = () => {
             <span
               className="
                 text-transparent
-                bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600
+                bg-clip-text bg-gradient-to-r from-pink-600 to-pink-500
               "
             >
               Capabilities

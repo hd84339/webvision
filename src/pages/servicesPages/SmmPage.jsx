@@ -22,7 +22,7 @@ import {
 import SEO from "../../components/SEO";
 
 // --- Styling & Config ---
-// Accent Color: Deep Blue (#3B82F6)
+// Accent Color: Premium Pink (pink-600)
 // Text Color: Deep Blue (#1F2937)
 
 // --- Pricing Card Data ---
@@ -50,8 +50,8 @@ const pricingPlans = [
       "Conversion Tracking Setup (Pixel/API)",
       "Advanced Audience Segmentation & Testing",
     ],
-    accent: "text-[#3B82F6]", // Primary Blue
-    shadow: "shadow-[#3B82F6]/50",
+    accent: "text-pink-600", // Primary Blue
+    shadow: "shadow-pink-600/50",
   },
   {
     icon: DollarSign,
@@ -131,7 +131,7 @@ const HeroSection = () => (
             Mastering Social Media: From{" "}
             <span
               className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
             >
               Engagement to ROI
@@ -150,14 +150,14 @@ const HeroSection = () => (
             href="#core-services"
             whileHover={{
               scale: 1.05,
-              boxShadow: "0px 5px 10px rgba(59, 130, 246, 0.4)",
+              boxShadow: "0px 5px 10px rgba(225, 29, 72, 0.4)",
             }}
             whileTap={{ scale: 0.95 }}
             className="
                     inline-block
                     mt-4 px-6 py-3
                     text-white font-semibold
-                    bg-[#3B82F6]
+                    bg-pink-600
                     rounded-lg
                     shadow-md
                   "
@@ -261,7 +261,7 @@ const PaidAdsSection = () => (
           Precision Targeting &{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Paid Ad Mastery
@@ -335,7 +335,7 @@ const ImageMosaicSection = () => (
         Platform{" "}
         <span
           className="
-                    text-[#3B82F6]
+                    text-pink-600
                   "
         >
           Ecosystem
@@ -473,7 +473,7 @@ const PillarCard = ({ icon: Icon, title, description }) => (
       className="
             w-10 h-10
             mb-3
-            text-[#3B82F6]
+            text-pink-600
           "
     />
     <h4
@@ -575,7 +575,7 @@ const CardGridSection = () => {
           The 8 Pillars of{" "}
           <span
             className="
-                        text-[#3B82F6]
+                        text-pink-600
                       "
           >
             Social Media Success
@@ -631,7 +631,7 @@ const PricingSection = () => (
         Social Media{" "}
         <span
           className="
-                    text-[#3B82F6]
+                    text-pink-600
                   "
         >
           Investment Packages
@@ -718,7 +718,7 @@ const PricingSection = () => (
                                         flex-shrink-0
                                         w-5 h-5
                                         mr-3
-                                        text-[#3B82F6]
+                                        text-pink-600
                                       `}
                   />
                   <span>{feature}</span>
@@ -739,9 +739,9 @@ const PricingSection = () => (
                                 w-full
                                 py-3
                                 text-center font-semibold text-white
-                                bg-[#3B82F6]
+                                bg-pink-600
                                 shadow-md
-                                transition duration-300 hover:bg-blue-600
+                                transition duration-300 hover:bg-pink-700
                               `}
               >
                 Get Custom Proposal
