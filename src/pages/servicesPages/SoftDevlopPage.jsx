@@ -195,10 +195,240 @@ const HeroSection = () => (
     </div>
   </motion.section>
 );
+const TaskFliersection = () => (
+  <motion.section
+    initial="hidden"
+    animate="visible"
+    variants={containerVariants}
+    className="
+      py-20 px-4
+      bg-white
+      sm:px-10
+    "
+  >
+    <div
+      className="
+        grid grid-cols-1
+        max-w-7xl
+        mx-auto
+        gap-12 items-center
+        md:grid-cols-2
+      "
+    >
+      {/* Left Part: Text and Heading (Software Dev Focus) */}
+      <motion.div
+        variants={itemVariants}
+        className="
+          space-y-4
+        "
+      >
+        <h2
+          className="
+            text-sm font-semibold tracking-widest text-gray-500
+            uppercase
+          "
+        >
+         TaskFlier
+        </h2>
+        <h1
+          className="
+            text-4xl font-extrabold leading-tight text-[#1F2937]
+            md:text-5xl
+          "
+        >
+           TaskFlier – Simplify Team {" "}
+          <span
+            className="
+              text-pink-600
+            "
+          >
+           Collaboration and Task Management
+          </span>
+        </h1>
+        <p
+          className="
+            text-lg text-gray-600
+          "
+        >
+          TaskFlier is a project and task management collective produced in response to teams that do not want to be complicated to organize. It facilitates effective delegation, allows tracking, and is accountable, all in one, easy-to-use interface.
+        </p>
 
+        <ul
+          className="
+            space-y-1 pl-4
+            text-lg text-gray-600
+            list-disc list-inside
+          "
+        >
+                 <li><b>Project Planning & Scheduling</b></li>
+                 <li>Create detailed project plans, set milestones, and manage timelines effectively.</li>
+                 <li><b>Task Management</b></li>
+                 <li>Assign, prioritize, and track tasks with status updates and progress indicators.</li>
+                 <li><b>Team Collaboration</b></li>
+                 <li>Share updates, files, and comments in real-time to keep everyone on the same page.</li>
+                 <li><b>Milestone Tracking</b></li>
+                 <li>Monitor key deliverables and ensure the project stays aligned with goals.</li>
+                 <li><b>Time Tracking</b></li>
+                 <li>Log hours spent on each task to measure productivity and control project costs.</li>
+                 <li><b>Resource Management</b></li>
+                 <li>Allocate and optimize resources like manpower, tools, and budgets efficiently.</li>
+                 
+                 
+
+        </ul>
+
+
+        <motion.a
+          href="#core-services"
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0px 5px 10px rgba(225, 29, 72, 0.4)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          className="
+            inline-block
+            mt-4 px-6 py-3
+            text-white font-semibold
+            bg-pink-600
+            rounded-lg
+            shadow-md
+          "
+        >
+          Demo
+        </motion.a>
+      </motion.div>
+
+      {/* Right Part: Image  */}
+      <motion.div
+        variants={itemVariants}
+        whileHover={{ scale: 1.02, rotate: 0.5 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="
+          flex
+          justify-center
+        "
+      >
+        <div
+          className="
+            flex
+            w-full max-w-lg h-full
+            items-center justify-center
+          "
+        >
+          <img
+            src="/images/app_development_code.jpg"
+            alt="Software architecture diagram on a screen"
+            loading="lazy"
+            className="
+              w-full h-full
+              rounded-xl border-4 border-pink-600
+              shadow-2xl
+            "
+          />
+        </div>
+      </motion.div>
+    </div>
+  </motion.section>
+);
 // ----------------------------------------------------------------------
 // 2. Content/Image Split Section (Left Image, Right Content)
 // ----------------------------------------------------------------------
+const MParchiSection = () => (
+  <motion.section
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.4 }}
+    variants={containerVariants}
+    className="
+      py-20 px-4
+      bg-gray-50
+      sm:px-10
+    "
+  >
+    <div
+      className="
+        grid grid-cols-1
+        max-w-7xl
+        mx-auto
+        gap-12 items-center
+        md:grid-cols-2
+      "
+    >
+      {/* Left Part: Image  */}
+      <motion.div
+        variants={itemVariants}
+        whileHover={{ scale: 1.02, rotate: -0.5 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="
+          flex order-2
+          justify-center
+          md:order-1
+        "
+      >
+        <img
+          src="/clients/mparchi.png"
+          alt="MParchi – Billing Software that’s Practical, Fast, and Easy to Use"
+          loading="lazy"
+          className="
+            w-full max-w-md
+            rounded-xl 
+            shadow-2xl
+          "
+        />
+      </motion.div>
+
+      {/* Right Part: Related Software Dev Information (Agile/DevOps) */}
+      <motion.div
+        variants={itemVariants}
+        className="
+          order-1
+          space-y-4
+          md:order-2
+        "
+      >
+        <h3
+          className="
+            text-4xl font-extrabold text-[#1F2937]
+          "
+        >
+          MParchi – Billing Software{" "}
+          <span
+            className="
+              text-pink-600
+            "
+          >
+             that’s Practical, Fast, and Easy to Use
+          </span>
+        </h3>
+        <p
+          className="
+            text-lg text-gray-600
+          "
+        >
+          Mparchi is a streamlined, low-cost billing program designed to help any business process invoices faster, track the state of their sales, and have a clear billing history, without the unnecessary cost and sophistication of high-level accounting packages.
+        </p>
+        <ul
+          className="
+            space-y-1 pl-4
+            text-lg text-gray-600
+            list-disc list-inside
+          "
+        >
+                 <li><b>Core Capabilities</b></li>
+                 <li>Effortless Billing & Invoicing</li>
+                 <li>Smart Inventory Management</li>
+                 <li>Accounting Made Simple</li>
+                 <li>Customer & Supplier Management</li>
+                 <li>Purchase & Expense Tracking</li>
+                 <li>Real-Time Reports & Analytics</li>
+                 <li>Data Security & Backup</li>
+
+        </ul>
+      </motion.div>
+    </div>
+  </motion.section>
+);
+
 const MethodologySection = () => (
   <motion.section
     initial="hidden"
@@ -674,6 +904,10 @@ const SoftDevPage = () => {
       />
       {/* 1. Hero Content/Image Section */}
       <HeroSection />
+
+      <MParchiSection />
+
+      <TaskFliersection />
 
       {/* 2. Content/Image Detail Section (Agile/DevOps Focus) */}
       <MethodologySection />
