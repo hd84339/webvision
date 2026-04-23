@@ -316,12 +316,12 @@ const TaskFliersection = () => (
           "
         >
           <img
-            src="/images/app_development_code.jpg"
+            src="/clients/taskflyer.png"
             alt="Software architecture diagram on a screen"
             loading="lazy"
             className="
               w-full h-full
-              rounded-xl border-4 border-pink-600
+              rounded-xl border-2 border-pink-600
               shadow-2xl
             "
           />
