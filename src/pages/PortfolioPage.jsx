@@ -91,6 +91,52 @@ const portfolioItems = [
     link: "#",
     image: "/portfolio/preeti-plastic.png",
   },
+  {
+    title: "Smart Solutions",
+    category: "Website",
+    icon: <Globe size={18} />,
+    description: "Corporate platform for comprehensive business and IT solutions.",
+    techStack: ["React", "Node.js"],
+    link: "https://www.ssolutions.in/",
+    image: "/portfolio/smart-solutions.png",
+  },
+  {
+    title: "Smart Solutions Mumbai",
+    category: "Website",
+    icon: <Layout size={18} />,
+    description: "Regional business hub and digital services portal.",
+    techStack: ["Next.js", "Tailwind"],
+    link: "https://www.smartsolutionsmumbai.com/",
+    image: "/portfolio/smart-solutions-mumbai.png",
+  },
+  {
+    title: "Loan Sarathi",
+    category: "SaaS",
+    icon: <Search size={18} />,
+    description: "Digital lending platform connecting borrowers with ideal financial products.",
+    techStack: ["Vue.js", "Django"],
+    link: "https://loansarathi.com/",
+    image: "https://image.thum.io/get/width/1024/crop/800/https://loansarathi.com/",
+    useImageFallback: true,
+  },
+  {
+    title: "Loan Baazaar",
+    category: "SaaS",
+    icon: <Smartphone size={18} />,
+    description: "Comprehensive loan aggregation and comparison marketplace.",
+    techStack: ["React Native", "Express"],
+    link: "https://loanbaazaar.com/",
+    image: "/portfolio/loan-baazaar.png",
+  },
+  {
+    title: "Smart Dial",
+    category: "Website",
+    icon: <Monitor size={18} />,
+    description: "Intelligent communication and directory service platform.",
+    techStack: ["Angular", "Firebase"],
+    link: "https://smartdial.co.in/",
+    image: "/portfolio/smart-dial.png",
+  },
 ];
 
 const categories = ["All", "Website", "Branding", "SaaS", "E-Commerce"];
@@ -120,22 +166,41 @@ const PortfolioCard = ({ item, index }) => {
                 relative
               "
       >
-        <motion.img
-          src={item.image}
-          alt={item.title}
-          loading="lazy"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src =
-              "https://placehold.co/600x800/6366f1/ffffff?text=Project+Preview";
-          }}
-          className="
-                    object-cover object-top
-                    w-full h-auto
-                    transition-transform
-                    absolute inset-0 duration-[7000ms] ease-in-out group-hover:-translate-y-[calc(100%-15rem)]
-                  "
-        />
+        {item.link && item.link !== "#" && !item.useImageFallback ? (
+          <iframe
+            src={item.link}
+            title={item.title}
+            loading="lazy"
+            scrolling="no"
+            className="
+              absolute top-0 left-0
+              w-[400%] h-[400%]
+              origin-top-left
+              scale-[0.25]
+              pointer-events-none
+              border-0
+              transition-transform duration-[7000ms] ease-in-out
+              group-hover:-translate-y-[10%]
+            "
+          />
+        ) : (
+          <motion.img
+            src={item.image}
+            alt={item.title}
+            loading="lazy"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src =
+                "https://placehold.co/600x800/6366f1/ffffff?text=Project+Preview";
+            }}
+            className="
+                      object-cover object-top
+                      w-full h-auto
+                      transition-transform
+                      absolute inset-0 duration-[7000ms] ease-in-out group-hover:-translate-y-[calc(100%-15rem)]
+                    "
+          />
+        )}
         <div
           className="
                     z-10 flex
