@@ -92,7 +92,7 @@ const OurClients = () => {
     };
 
     return (
-        <main className="bg-gray-100 min-h-screen py-16 md:py-24">
+        <main className="bg-gray-100 min-h-screen pt-8 pb-16 md:pt-12 md:pb-24">
             <SEO title="Clients" description="Trusted clients of Webvision Infotech across industries." url="/clients" />
             <div className="container mx-auto px-6">
                 {/* Header */}

@@ -57,7 +57,7 @@ const ProductSection = ({ product, index }) => {
             transition={{ duration: 0.8, ease: "circOut" }}
             className="group relative"
         >
-            <div className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-24 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
+            <div className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-14 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
                 <motion.div
                     className="w-full lg:w-1/2 relative"
                     whileHover={{ scale: 1.02, rotateY: isReversed ? -5 : 5 }}
@@ -129,40 +129,98 @@ const OurProducts = () => {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] -z-10" />
             <div className="absolute bottom-1/2 left-0 w-[400px] h-[400px] bg-purple-50 rounded-full blur-[120px] -z-10" />
 
-            <div className="container mx-auto px-6 py-20 lg:py-32">
-                <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-40 space-y-6">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        className="inline-flex items-center gap-2 bg-pink-50 text-pink-600 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase"
-                    >
-                        <Zap size={14} /> Global Enterprise Solutions
-                    </motion.div>
+            <div className="container mx-auto px-6 pt-6 pb-20 lg:pt-12 lg:pb-32">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-4 mb-12 lg:mb-20">
+                    <div className="w-full lg:w-1/2 space-y-8">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            className="inline-flex items-center gap-2 bg-pink-50 border border-pink-100 text-pink-600 px-4 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-sm"
+                        >
+                            <Zap size={16} className="text-pink-500" /> Premium Enterprise Solutions
+                        </motion.div>
 
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-5xl md:text-7xl font-black text-slate-900 tracking-tight"
-                    >
-                        Future-Ready <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">
-                            Software Products
-                        </span>
-                    </motion.h1>
+                        <motion.h1
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-[1.1]"
+                        >
+                            Innovative & <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-violet-600">
+                                Future-Ready Products
+                            </span>
+                        </motion.h1>
 
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed"
-                    >
-                        Custom-engineered digital tools that scale with your vision. Reliable, secure, and built for growth.
-                    </motion.p>
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.2 }}
+                            className="text-lg md:text-xl text-slate-500 leading-relaxed max-w-lg"
+                        >
+                            Explore our comprehensive suite of custom-engineered digital tools designed to accelerate your business growth and scale seamlessly with your long-term vision. Built for ultimate performance and security.
+                        </motion.p>
+                        
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 }}
+                            className="flex items-center gap-4 pt-4"
+                        >
+                             <div className="flex flex-col">
+                                 <span className="text-4xl font-black text-slate-900">50+</span>
+                                 <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Enterprise Clients</span>
+                             </div>
+                             <div className="w-px h-16 bg-slate-200"></div>
+                             <div className="flex flex-col">
+                                 <span className="text-4xl font-black text-slate-900">99%</span>
+                                 <span className="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-1">Uptime Guarantee</span>
+                             </div>
+                        </motion.div>
+                    </div>
+
+                    <div className="w-full lg:w-1/2 relative mt-10 lg:mt-0">
+                        <motion.div
+                             initial={{ opacity: 0, scale: 0.95 }}
+                             animate={{ opacity: 1, scale: 1 }}
+                             transition={{ duration: 0.6, delay: 0.2 }}
+                             className="relative z-10"
+                        >
+                             <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.2)] border border-white/60 bg-white p-2.5 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
+                                 <img 
+                                     src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" 
+                                     alt="Software Dashboards" 
+                                     className="rounded-2xl object-cover w-full h-[350px] lg:h-[450px]"
+                                 />
+                                 <div className="absolute inset-0 bg-gradient-to-tr from-violet-600/10 to-transparent mix-blend-multiply rounded-2xl"></div>
+                             </div>
+                             
+                             <motion.div
+                                 animate={{ y: [0, -15, 0] }}
+                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                 className="absolute -top-6 -left-6 bg-white p-4 lg:p-5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 z-20"
+                             >
+                                 <div className="bg-emerald-100 p-2.5 lg:p-3 rounded-full">
+                                     <ShieldCheck size={24} className="text-emerald-600" />
+                                 </div>
+                                 <div>
+                                     <p className="text-sm lg:text-base font-bold text-slate-900">Bank-grade</p>
+                                     <p className="text-xs lg:text-sm font-semibold text-slate-500">Security Built-in</p>
+                                 </div>
+                             </motion.div>
+                        </motion.div>
+                        
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-gradient-to-tr from-pink-200/50 to-violet-200/50 blur-[100px] -z-10 rounded-full opacity-70"></div>
+                    </div>
                 </div>
 
-                <div className="space-y-32 lg:space-y-56">
+                <div className="flex flex-col space-y-8 lg:space-y-16">
                     {products.map((product, index) => (
-                        <ProductSection key={index} product={product} index={index} />
+                        <React.Fragment key={index}>
+                            <ProductSection product={product} index={index} />
+                            {index < products.length - 1 && (
+                                <hr className="border-t border-slate-200" />
+                            )}
+                        </React.Fragment>
                     ))}
                 </div>
             </div>

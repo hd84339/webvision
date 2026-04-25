@@ -30,25 +30,30 @@ const Footer = () => {
     <footer
       className="
         overflow-hidden
-        text-gray-800
-        bg-gradient-to-br from-pink-50 via-pink-100 to-rose-100
+        text-slate-300
+        bg-slate-950
         relative
+        border-t border-white/5
       "
     >
+      {/* Premium background grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      
       {/* 🌌 Background Decorative Glow */}
       <div
         className="
-          w-full h-px
-          bg-gradient-to-r from-transparent via-pink-500/50 to-transparent
-          absolute top-0 left-1/2 -translate-x-1/2
+          w-full h-[2px]
+          bg-gradient-to-r from-transparent via-pink-500 to-transparent
+          absolute top-0 left-1/2 -translate-x-1/2 opacity-70
         "
       />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[120px] bg-pink-500/20 blur-[100px] pointer-events-none rounded-full" />
 
       <div
         className="
           max-w-7xl
           mx-auto px-6 py-16
-          md:px-12
+          md:px-12 relative z-10
         "
       >
         <motion.div
@@ -69,21 +74,22 @@ const Footer = () => {
             className="flex flex-col items-start gap-1"
           >
             <Link to="/" className="block">
-              <img
-                src="/logo_v3.png"
-                alt="Webvision Infotech logo"
-                loading="lazy"
-                className="
-                  h-44 w-auto
-                  object-contain
-                  brightness-110
-                "
-              />
+              <div className="bg-white/90 p-3 rounded-2xl mb-4 backdrop-blur-sm">
+                  <img
+                    src="/logo_v3.png"
+                    alt="Webvision Infotech logo"
+                    loading="lazy"
+                    className="
+                      h-12 w-auto
+                      object-contain
+                    "
+                  />
+              </div>
             </Link>
 
             <p
               className="
-                text-sm leading-relaxed text-gray-700
+                text-sm leading-relaxed text-slate-400
               "
             >
               A "One Stop IT Solution" for modern business processes. We
@@ -97,7 +103,7 @@ const Footer = () => {
             <h3
               className="
                 mb-6 pl-3
-                text-lg font-bold text-gray-900
+                text-lg font-black text-white tracking-wide uppercase
                 border-l-4 border-pink-500
               "
             >
@@ -149,7 +155,7 @@ const Footer = () => {
                   <Link
                     to={service.url}
                     className="
-                      transition-colors
+                      transition-colors text-slate-400
                       hover:text-pink-400
                     "
                   >
@@ -165,7 +171,7 @@ const Footer = () => {
             <h3
               className="
                 mb-6 pl-3
-                text-lg font-bold text-white
+                text-lg font-black text-white tracking-wide uppercase
                 border-l-4 border-pink-500
               "
             >
@@ -201,7 +207,7 @@ const Footer = () => {
                   <Link
                     to={item.url}
                     className="
-                      transition-colors
+                      transition-colors text-slate-400
                       hover:text-pink-400
                     "
                   >
@@ -222,7 +228,7 @@ const Footer = () => {
             <h3
               className="
                 mb-6 pl-3
-                text-lg font-bold text-white
+                text-lg font-black text-white tracking-wide uppercase
                 border-l-4 border-pink-500
               "
             >
@@ -248,10 +254,10 @@ const Footer = () => {
                 />
                 <p
                   className="
-                    text-gray-700
+                    text-slate-400
                   "
                 >
-                  B4, 2nd Floor, 224/A, Ambadi Rd, Sai Nagar, Vasai West, Palghar, Vasai-Virar, Maharashtra 401202
+                  B4, 2nd Floor, 224/A, Ambadi Rd, Sai Nagar, Vasai West, Palghar, Maharashtra 401202
                 </p>
               </div>
               <div
@@ -269,7 +275,7 @@ const Footer = () => {
                 <a
                   href="mailto:info@webvisionsoftech.com"
                   className="
-                    transition-colors
+                    transition-colors text-slate-400
                     hover:text-white
                   "
                 >
@@ -290,7 +296,7 @@ const Footer = () => {
                 />
                 <p
                   className="
-                    text-gray-700
+                    text-slate-400
                   "
                 >
                   +91 9322347666
@@ -335,9 +341,9 @@ const Footer = () => {
                   className="
                     p-2.5
                     text-white
-                    bg-pink-500
-                    rounded-xl
-                    transition-all shadow-lg
+                    bg-white/10 backdrop-blur-md
+                    rounded-xl border border-white/5
+                    transition-all shadow-lg hover:border-pink-500
                   "
                 >
                   <social.icon size={18} />
@@ -355,42 +361,24 @@ const Footer = () => {
           className="
             mt-16 pt-8
             text-center
-            border-t border-pink-200
+            border-t border-white/10
           "
         >
           <p
             className="
-              text-xs text-gray-600 tracking-widest
+              text-xs text-slate-500 tracking-widest
               uppercase
             "
           >
             © {new Date().getFullYear()}{" "}
             <span
               className="
-                text-gray-900 font-bold
+                text-white font-bold
               "
             >
               Webvision Softech Pvt. Ltd.
             </span>{" "}
             All Rights Reserved.
-          </p>
-          <p
-            className="
-              mt-2
-              text-xs text-gray-700
-            "
-          >
-            Engineered with Precision by{" "}
-            <a
-              href="https://www.linkedin.com/in/harsh-dubey-498498256/"
-              className="
-                text-pink-500/80
-                transition-colors
-                hover:text-pink-400
-              "
-            >
-              Harsh Dubey
-            </a>
           </p>
         </motion.div>
       </div>

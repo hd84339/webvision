@@ -24,18 +24,18 @@ const ContactInfoCard = ({ icon: Icon, title, lines, link }) => (
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    whileHover={{ y: -10 }}
+    whileHover={{ y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     className="
-        flex flex-col
+        relative flex flex-col
         p-8
         text-center
-        bg-white
-        rounded-3xl border border-slate-100
-        shadow-sm transition-all
-        group items-center duration-300 hover:shadow-xl
+        bg-white/80 backdrop-blur-xl
+        rounded-[2rem] border border-white
+        shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all
+        group items-center duration-300 hover:shadow-[0_8px_30px_rgb(236,72,153,0.1)] hover:border-pink-100
       "
   >
     <div
@@ -44,8 +44,8 @@ const ContactInfoCard = ({ icon: Icon, title, lines, link }) => (
             text-pink-600
             bg-pink-50
             rounded-2xl
-            transition-colors
-            group-hover:bg-pink-600 group-hover:text-white duration-300
+            transition-all
+            group-hover:bg-gradient-to-br group-hover:from-pink-500 group-hover:to-violet-500 group-hover:text-white group-hover:scale-110 duration-300 shadow-sm
           "
     >
       <Icon size={28} />
@@ -53,7 +53,7 @@ const ContactInfoCard = ({ icon: Icon, title, lines, link }) => (
     <h3
       className="
             mb-3
-            text-xl font-bold text-slate-800
+            text-xl font-black text-slate-800 tracking-tight
           "
     >
       {title}
@@ -61,15 +61,13 @@ const ContactInfoCard = ({ icon: Icon, title, lines, link }) => (
     <div
       className="
             space-y-1
-            text-slate-500 text-sm leading-relaxed
+            text-slate-500 text-sm leading-relaxed font-medium
           "
     >
       {lines.map((line, index) => (
         <span
           key={index}
-          className="
-                    block
-                  "
+          className="block"
         >
           {line}
         </span>
@@ -119,24 +117,35 @@ const Contact = () => {
       {/* --- Header Section --- */}
       <div
         className="
-                pt-32 pb-40 px-6
-                bg-slate-900
+                pt-8 pb-24 px-6 lg:pt-10 lg:pb-32
+                bg-slate-950
                 relative
                 overflow-hidden
               "
       >
+        {/* Subtle grid pattern background */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        
         <div
           className="
-                    opacity-20 pointer-events-none
+                    opacity-50 pointer-events-none
                     absolute inset-0
                   "
         >
           <div
             className="
-                        w-[500px] h-[500px]
-                        bg-pink-600
+                        w-[600px] h-[600px]
+                        bg-pink-600/30
                         rounded-full
-                        absolute top-0 right-0 blur-[120px] translate-x-1/2 -translate-y-1/2
+                        absolute top-0 right-0 blur-[120px] translate-x-1/3 -translate-y-1/3
+                      "
+          />
+          <div
+            className="
+                        w-[500px] h-[500px]
+                        bg-violet-600/20
+                        rounded-full
+                        absolute bottom-0 left-0 blur-[100px] -translate-x-1/3 translate-y-1/3
                       "
           />
         </div>
@@ -152,17 +161,25 @@ const Contact = () => {
                     relative
                   "
         >
+          <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-pink-400 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-8 backdrop-blur-md"
+          >
+              <MessageSquare size={14} /> Get in Touch
+          </motion.div>
+
           <h1
             className="
                         mb-6
-                        text-4xl font-black text-white
-                        md:text-6xl
+                        text-5xl font-black text-white
+                        md:text-6xl lg:text-7xl tracking-tight leading-[1.1]
                       "
           >
-            Let's Design Your{" "}
+            Let's Design Your <br />
             <span
               className="
-                        text-pink-400
+                        text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500
                       "
             >
               Digital Future
@@ -173,7 +190,7 @@ const Contact = () => {
                         max-w-2xl
                         mx-auto
                         text-slate-400 text-lg
-                        md:text-xl
+                        md:text-xl leading-relaxed
                       "
           >
             Whether you have a question about features, pricing, or anything
@@ -188,7 +205,7 @@ const Contact = () => {
                 z-20
                 max-w-7xl
                 mx-auto px-6
-                -mt-20 relative
+                -mt-12 lg:-mt-16 relative
               "
       >
         <div
@@ -224,13 +241,13 @@ const Contact = () => {
       <div
         className="
                 max-w-7xl
-                mx-auto px-6 py-24
+                mx-auto px-6 pt-12 pb-20
               "
       >
         <div
           className="
                     grid grid-cols-1
-                    gap-16 items-start
+                    gap-10 lg:gap-12 items-start
                     lg:grid-cols-2
                   "
         >

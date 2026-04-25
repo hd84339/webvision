@@ -302,7 +302,7 @@ const Portfolio = () => {
     <section
       className="
             min-h-screen
-            py-24 px-6
+            pt-8 pb-24 px-6 lg:pt-12
             bg-[#F8FAFC]
           "
     >
@@ -357,7 +357,7 @@ const Portfolio = () => {
         <div
           className="
                     flex flex-wrap
-                    mb-16
+                    mb-10
                     justify-center gap-2
                   "
         >

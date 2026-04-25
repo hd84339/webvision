@@ -16,7 +16,7 @@ const Navbar = () => {
     { name: 'Our Product', path: '/products' },
     { name: 'Client', path: '/clients' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Term', path: '/terms' },
+  
   ];
 
   const handleNavigation = (path) => {

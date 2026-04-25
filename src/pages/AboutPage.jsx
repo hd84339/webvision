@@ -46,7 +46,7 @@ const AboutUs = () => (
     <main
         className="
       bg-gradient-to-br from-[#f5faff] via-white to-[#f5faff]
-      text-gray-800 min-h-screen py-14 px-4 md:px-24
+      text-gray-800 min-h-screen py-5 px-4 md:px-24
       flex flex-col justify-center
     "
     >
