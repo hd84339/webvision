@@ -129,6 +129,7 @@ const portfolioItems = [
     image: "/portfolio/loan-baazaar.png",
   },
   {
+    
     title: "Smart Dial",
     category: "Website",
     icon: <Monitor size={18} />,
