@@ -40,6 +40,8 @@ const TermsPage = lazy(() => import("./pages/TermsPage"));
 const StatsSection = lazy(() => import("./components/StatsSection"));
 const ProcessFlow = lazy(() => import("./components/ProcessFlow"));
 const CTASection = lazy(() => import("./components/CTASection"));
+const FeaturedPortfolio = lazy(() => import("./components/FeaturedPortfolio"));
+
 
 const Home = () => {
   return (
@@ -53,6 +55,7 @@ const Home = () => {
       <StatsSection />
       <Aboutus />
       <Services />
+      <FeaturedPortfolio />
       <ProcessFlow />
       <IndustriesWeServe />
       <Testimonials />

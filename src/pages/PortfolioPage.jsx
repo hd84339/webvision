@@ -62,16 +62,7 @@ const portfolioItems = [
     link: "#",
     image: "/portfolio/onxt.png",
   },
-  {
-    title: "Shubham Enterprises",
-    category: "E-Commerce",
-    icon: <ShoppingBag size={18} />,
-    description:
-      "Massive scale store with custom backend and payment gateways.",
-    techStack: ["Shopify", "GraphQL"],
-    link: "#",
-    image: "/portfolio/shubham.png",
-  },
+
   {
     title: "Weblord",
     category: "Website",
@@ -82,15 +73,7 @@ const portfolioItems = [
     link: "#",
     image: "/portfolio/weblord.png",
   },
-  {
-    title: "Preeti Plastic",
-    category: "Branding",
-    icon: <Search size={18} />,
-    description: "Corporate identity for a major manufacturing firm.",
-    techStack: ["WordPress", "PHP"],
-    link: "#",
-    image: "/portfolio/preeti-plastic.png",
-  },
+
   {
     title: "Smart Solutions",
     category: "Website",
@@ -354,6 +337,7 @@ const Portfolio = () => {
         </div>
 
         {/* --- Filter Bar --- */}
+        
         <div
           className="
                     flex flex-wrap
